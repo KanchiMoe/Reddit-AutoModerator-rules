@@ -1,0 +1,17 @@
+---
+    # weebcastle spam
+
+type: any
+body+domain+url (includes): 'weebcastle.com'
+action: remove
+moderators_exempt: false
+action: spam
+action_reason: "Dropship spam catcher"
+modmail_subject: "Dropship spam caught"
+modmail: |
+
+    The {{kind}} linked below has caught by the filter.
+
+    **Author:** /u/{{author}}. **Link:** {{permalink}}
+moderators_exempt: false
+---
