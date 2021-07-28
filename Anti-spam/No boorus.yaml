@@ -1,0 +1,28 @@
+---
+    # Warning when booru links are posted
+
+type: comment
+body (includes): ['gelbooru.com', 'danbooru.donmai.us', 'drawanime.art']
+comment: |
+
+    Your link, (`{{match}}`) is not considered a valid source to use when giving credit for fan art.
+
+    Please use tools such as:
+
+    * [SauceNao](http://saucenao.com/) (recommended)
+    * [iqdb](http://www.iqdb.org/)
+    * [Google Images](http://images.google.com/)
+    * [TinEye](https://www.tineye.com/)
+    * [Trace.moe](https://trace.moe/)
+
+    And replace your link with one from the artist's Pixiv, Twitter, DeviantArt, etc page.
+
+    Only use {{match}} as a last resort if you can't find it elsewhere, but show/explain that you have tried searching!
+
+    **Posts are subject to removal if no valid source is provided.**
+  
+    *****
+
+    ^(Matched on `danbooru.donmai.us`. Triggered incorrectly?) ^[Let](https://www.reddit.com/message/compose/?to=/r/{{subreddit}}) ^[us](https://www.reddit.com/message/compose/?to=/r/{{subreddit}}) ^[know.](https://www.reddit.com/message/compose/?to=/r/{{subreddit}})
+moderators_exempt: false
+---
