@@ -1,0 +1,25 @@
+---
+    # Roger_bot banned channels work around
+
+type: submission
+domain: [youtube.com, youtu.be]
+media_author_url+media_author: [""]
+modmail_subject: "Roger_Bot Banned Channel Work Around"
+modmail: |
+  /u/{{author}} has posted a link to a video on a channel banned with Roger_Bot. Per an discussion, this post should be approved.
+  *****
+  Video Information: **Banned Channel:** {{media_author}} **Video Title:** {{media_title}} **Video Link:** [Link to the video]({{url}})
+  **Submission Title:** {{title}} **Link:** [Link to the submission]({{permalink}})
+priority: 999979
+moderators_exempt: false
+---
+
+# r/Videos used to have this horrible bot with thousands of banned channels 
+# for no reason, and bad auditing, and no way for other moderators to unban
+# channels. 
+#
+# This condition was used to alert moderators if a now-unbanned channel
+# posted but was removed by roger_bot.
+#
+# There are better ways of doing this. This condition was used originally 
+# in 2016 and 2017.
