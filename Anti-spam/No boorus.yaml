@@ -2,7 +2,7 @@
     # Warning when booru links are posted
 
 type: comment
-body (includes): ['gelbooru.com', 'danbooru.donmai.us', 'drawanime.art']
+body (includes): ['gelbooru.com', 'danbooru.donmai.us', 'drawanime.art', 'i-love-cool.com', 'knowyourmeme.com']
 comment: |
 
     Your link, (`{{match}}`) is not considered a valid source to use when giving credit for fan art.
@@ -23,6 +23,6 @@ comment: |
   
     *****
 
-    ^(Matched on `danbooru.donmai.us`. Triggered incorrectly?) ^[Let](https://www.reddit.com/message/compose/?to=/r/{{subreddit}}) ^[us](https://www.reddit.com/message/compose/?to=/r/{{subreddit}}) ^[know.](https://www.reddit.com/message/compose/?to=/r/{{subreddit}})
+    ^(Matched on `{{match}}`. Triggered incorrectly?) ^[Let](https://www.reddit.com/message/compose/?to=/r/{{subreddit}}) ^[us](https://www.reddit.com/message/compose/?to=/r/{{subreddit}}) ^[know.](https://www.reddit.com/message/compose/?to=/r/{{subreddit}})
 moderators_exempt: false
 ---
