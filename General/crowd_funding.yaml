@@ -1,0 +1,21 @@
+---
+    # Remove croudfunding websites
+type: any
+standard: crowdfunding sites
+action: remove
+action_reason: "{{kind}} to a crowdfunding website - [{{match}}]"
+moderators_exempt: false
+message_subject: "Your {{kind}} in r/{{subreddit}} because it contains a link to a crowdfunding website."
+message: |
+
+    Hi /u/{{author}},
+    
+    Thank you for your {{kind}} to r/{{subreddit}}. You can find it [here]({{permalink}}).
+
+    Unfortunately it has been removed because it contains a link to a crowdfunding website (`{{match}}`).
+    
+    Crowdfunding websites are not allowed on r/{{subreddit}} because they are off-topic, and are generally not verifiable.
+    
+    *****
+moderators_exempt: false
+---
