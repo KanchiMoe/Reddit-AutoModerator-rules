@@ -1,0 +1,21 @@
+---
+    # Found safe flair updater
+type: comment
+author:
+  is_submitter: true
+body (regex, includes-word): ['!Found safe','!safe']
+parent_submission:
+  overwrite_flair: true
+  ~flair_template_id: dc9d83f4-935d-11e3-9b13-12313b0ce8a6
+  set_flair:
+    template_id: dc9d83f4-935d-11e3-9b13-12313b0ce8a6
+message_subject: "We have updated your post's flair"
+message: |
+
+    We have updated your post '[{{title}}]({{permalink}})' with the "Found safe" flair because we detected `{{match-1}}` in a comment you left.
+
+    If this was set incorrectly, please [contact the moderation team here](/message/compose?to=/r/MissingPersons&subject=Flair set incorrectly&message={{permalink}}).
+
+    *****
+moderators_exempt: false
+---
