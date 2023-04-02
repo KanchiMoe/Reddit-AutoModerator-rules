@@ -1,9 +1,9 @@
 ---
-    # Found safe flair updater
+# Found safe flair updater
 type: comment
 author:
   is_submitter: true
-body (regex, includes-word): ['!Found safe','!safe']
+body (regex, includes-word): ['!Found safe', '!safe']
 parent_submission:
   overwrite_flair: true
   ~flair_template_id: dc9d83f4-935d-11e3-9b13-12313b0ce8a6
