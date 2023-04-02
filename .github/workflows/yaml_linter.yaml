@@ -1,8 +1,14 @@
 ---
-name: Yaml Lint
-on: [push]  # yamllint disable-line rule:truthy
+name: Yaml Linting
+on: # yamllint disable-line rule:truthy
+  push:
+    branches:
+      - "*"
+  pull_request:
+    branches:
+      - "*"
 jobs:
-  lintAllTheThings:
+  YAML_Linting:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
