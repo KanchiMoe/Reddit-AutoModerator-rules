@@ -1,0 +1,12 @@
+---
+    # Filter on 5 reports without mod intervention.
+reports: 5
+action: filter
+action_reason: "Removed a {{kind}} that recieved 5+ reports for review"
+modmail_subject: "Filtered a heavily reported {{kind}}"
+modmail: |
+
+    **Type** {{kind}} - **Author** /u/{{author}} - **Link** {{permalink}}
+
+    Please verify that this action was correct.
+---
