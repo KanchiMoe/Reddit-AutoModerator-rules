@@ -1,6 +1,5 @@
 ---
-    # Roger_bot banned channels work around
-
+# Roger_bot banned channels work around
 type: submission
 domain: [youtube.com, youtu.be]
 media_author_url+media_author: [""]
