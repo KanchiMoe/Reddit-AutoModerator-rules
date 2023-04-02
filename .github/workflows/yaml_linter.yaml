@@ -1,12 +1,12 @@
 ---
 name: Yaml Linting
-on:
+on: # yamllint disable-line rule:truthy
   push:
     branches:
-    - "*"
+      - "*"
   pull_request:
     branches:
-    - "*"
+      - "*"
 jobs:
   YAML_Linting:
     runs-on: ubuntu-latest
