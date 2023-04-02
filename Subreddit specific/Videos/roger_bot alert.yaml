@@ -13,12 +13,12 @@ priority: 999979
 moderators_exempt: false
 ---
 
-# r/Videos used to have this horrible bot with thousands of banned channels 
+# r/Videos used to have this horrible bot with thousands of banned channels
 # for no reason, and bad auditing, and no way for other moderators to unban
-# channels. 
+# channels.
 #
 # This condition was used to alert moderators if a now-unbanned channel
 # posted but was removed by roger_bot.
 #
-# There are better ways of doing this. This condition was used originally 
+# There are better ways of doing this. This condition was used originally
 # in 2016 and 2017.
