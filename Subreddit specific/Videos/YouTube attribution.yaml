@@ -3,20 +3,20 @@
 
 type: submission
 domain: [youtube.com, youtu.be]
-url: "attribution_link?a="   
+url: "attribution_link?a="
 action: remove
 action_reason: "[C3.2] YouTube Attribution link removal (R5)"
 set_flair: ["R5: Indirect Link (attr.)", "red"]
 comment: |
   Hello /u/{{author}}
-  
+
   Thank you for your submission, however it has been removed because it has been automatically determined to be breaking the following /r/{{subreddit}} rule:
   > **Rule 5** - No Indirect Links
-  
+
   To have your post accepted, you will need to remove the attribution part from the URL. [See this page for more information](https://www.reddit.com/r/videos/wiki/automoderator/p/c3-2).
-  
+
   If you think this isn't correct, and for more information and/or assistance, please [click here](https://www.reddit.com/r/videos/wiki/automoderator/p/c3-2).
-  
+
   *****
 moderators_exempt: false
 priority: 999990
