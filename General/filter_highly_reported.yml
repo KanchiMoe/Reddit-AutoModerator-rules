@@ -1,5 +1,5 @@
 ---
-    # Filter on 5 reports without mod intervention.
+# Filter on 5 reports without mod intervention.
 reports: 5
 action: filter
 action_reason: "Removed a {{kind}} that recieved 5+ reports for review"

@@ -1,10 +1,8 @@
 ---
-    # weebcastle spam
+# weebcastle spam
 
 type: any
 body+domain+url (includes): 'weebcastle.com'
-action: remove
-moderators_exempt: false
 action: spam
 action_reason: "Dropship spam catcher"
 modmail_subject: "Dropship spam caught"

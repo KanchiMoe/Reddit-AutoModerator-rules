@@ -1,5 +1,5 @@
 ---
-    # Warning when booru links are posted
+# Warning when booru links are posted
 type: comment
 body (includes): ['gelbooru.com', 'danbooru.donmai.us', 'drawanime.art', 'i-love-cool.com', 'knowyourmeme.com', 'zerochan.net']
 comment: |
@@ -19,7 +19,7 @@ comment: |
     Only use {{match}} as a last resort if you can't find it elsewhere, but show/explain that you have tried searching!
 
     **Posts are subject to removal if no valid source is provided.**
-  
+
     *****
 
     ^(Matched on `{{match}}`. Triggered incorrectly?) ^[Let](https://www.reddit.com/message/compose/?to=/r/{{subreddit}}) ^[us](https://www.reddit.com/message/compose/?to=/r/{{subreddit}}) ^[know.](https://www.reddit.com/message/compose/?to=/r/{{subreddit}})

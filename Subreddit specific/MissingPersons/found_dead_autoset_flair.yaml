@@ -1,5 +1,5 @@
 ---
-  # If any sort of "found dead" type words are used in title, automatically set the post flair
+# If any sort of "found dead" type words are used in title, automatically set the post flair
 type: submission
 title (includes): ["found dead", "body found", "confirmed dead", "remains found"]
 set_flair:
@@ -8,9 +8,9 @@ message_subject: "We've automatically set a flair on your post"
 message: |
 
     We have automatically set the "Found deceased" flair on your post: **[{{title}}]({{permalink}})**. This was done because ``{{match}}`` was detected in the title.
-    
+
     If this was set incorrectly, please [contact the moderation team here](/message/compose?to=/r/{{subreddit}}&subject=Flair set incorrectly&message={{permalink}}).
-    
+
     *****
 moderators_exempt: false
 ---
