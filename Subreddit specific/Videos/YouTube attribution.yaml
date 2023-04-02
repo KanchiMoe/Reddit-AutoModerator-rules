@@ -1,6 +1,5 @@
 --- 
-    # YouTube attribution remover
-
+# YouTube attribution remover
 type: submission
 domain: [youtube.com, youtu.be]
 url: "attribution_link?a="
