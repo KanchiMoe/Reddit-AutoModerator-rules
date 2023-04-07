@@ -1,0 +1,9 @@
+---
+# Nitter
+type: submission
+url+body (regex): 'twitter\.com(?# Making sure not to match it in the text part of the hyperlink >> )(?!\S+\] ?\()(?# Matching the rest of the url >> )([^\s\)?]+)'
+comment: |
+    **Alternative Nitter link:** https://nitter.nl{{match-2}}
+
+    *****
+---
