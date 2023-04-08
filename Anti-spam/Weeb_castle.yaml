@@ -1,10 +1,9 @@
 ---
 # weebcastle spam
-
 type: any
-body+domain+url (includes): 'weebcastle.com'
+body+domain+url (includes): ['weebcastle.com', 'opparanime.com']
 action: spam
-action_reason: "Dropship spam catcher"
+action_reason: "Dropship spam - {{match}}"
 modmail_subject: "Dropship spam caught"
 modmail: |
 
