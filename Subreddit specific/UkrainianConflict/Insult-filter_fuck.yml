@@ -1,6 +1,6 @@
 ---
 # 'fuck' insult detection - reporting possible insults containing "fuck" and other variations
-# (BC removed "yourself" and "yourselves" from Regex temporarily)
+# BC - removed "yourself" and "yourselves" from Regex temporarily
 type: any
 body (regex): ["you('re a)? fuck(ing|tard|er|ed|)", "fuck\\s*(you|heads?|wads?|offs?|heads?|faces?)"]
 ~title+body: [
@@ -14,7 +14,7 @@ body (regex): ["you('re a)? fuck(ing|tard|er|ed|)", "fuck\\s*(you|heads?|wads?|o
     "Fuck you elon", "Fuck Elon",
     # People - other politicians
     "fuck Mike Pompeo"
-    ]
+]
 action: report
 action_reason: "Possible insult using 'fuck'. Matched on: {{match}}"
 ignore_blockquotes: true
