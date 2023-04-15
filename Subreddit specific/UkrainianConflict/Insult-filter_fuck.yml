@@ -5,7 +5,7 @@ type: any
 body (regex): ["you('re a)? fuck(ing|tard|er|ed|)", "fuck\\s*(you|heads?|wads?|offs?|heads?|faces?)"]
 ~title+body: [
     # Countries
-    "fuck you russia", "Russia to fuck off", "fuck off to Russia", "fuck off russia", "Russians fuck off", "Fuck you Turkey", "Yanks to fuck off", 
+    "fuck you russia", "Russia to fuck off", "fuck off to Russia", "fuck off russia", "Russians fuck off", "Fuck you Turkey", "Yanks to fuck off",
     # People - Trump
     "fuck trump",
     # People - Putin
@@ -16,7 +16,7 @@ body (regex): ["you('re a)? fuck(ing|tard|er|ed|)", "fuck\\s*(you|heads?|wads?|o
     "fuck Mike Pompeo",
     # Misc
     "that poor fucker"
-    ]
+]
 action: report
 action_reason: "Possible insult using 'fuck'. Matched on: {{match}}"
 ignore_blockquotes: true
