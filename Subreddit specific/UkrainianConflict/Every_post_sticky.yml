@@ -4,7 +4,7 @@ type: submission
 comment_stickied: true
 comment_locked: true
 comment: |
-    Please take the time to read [the rules](/r/{{subreddit}}/about/rules/) and our [policy on trolls/bots](https://redd.it/u7833q). In addition: 
+    Please take the time to read [the rules](/r/{{subreddit}}/about/rules/) and our [policy on trolls/bots](https://redd.it/u7833q). In addition:
 
     * We have a **zero-tolerance** policy regarding racism, stereotyping, bigotry, and death-mongering. Violators will be banned.
     * **Keep it civil.** Report comments/posts that are uncivil to alert the moderators.
