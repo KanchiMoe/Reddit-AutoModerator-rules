@@ -1,6 +1,7 @@
 ---
 # Sticky on every submission
 type: submission
+~domain: [twitter.com]
 comment_stickied: true
 comment_locked: true
 comment: |
@@ -15,6 +16,30 @@ comment: |
     *****
 
     * Is `{{domain}}` an unreliable source? [**Let us know**](/r/UkrainianConflict/wiki/am/unreliable_sources).
+
+    * Help our moderators by providing context if something breaks the rules. [Send us a modmail](https://www.reddit.com/message/compose/?to=/r/{{subreddit}})
+
+    *****
+
+    ^(Your post has not been removed, this message is applied to every successful submission.)
+---
+# Sticky on every submission - Twitter only
+type: submission
+domain: [twitter.com]
+comment_stickied: true
+comment_locked: true
+comment: |
+    Please take the time to read [the rules](/r/{{subreddit}}/about/rules/) and our [policy on trolls/bots](https://redd.it/u7833q). In addition:
+
+    * We have a **zero-tolerance** policy regarding racism, stereotyping, bigotry, and death-mongering. Violators will be banned.
+    * **Keep it civil.** Report comments/posts that are uncivil to alert the moderators.
+    * **_Don't_ post low-effort comments** like joke threads, memes, slogans, or links without context.
+
+    > **Don't forget about our Discord server! - https://discord.gg/62fKCEHbDB**
+
+    *****
+
+    * Is the Twitter account `{{media_author}}` / `{{media_author_url}}` an unreliable source? [**Let us know**](/r/UkrainianConflict/wiki/am/unreliable_sources).
 
     * Help our moderators by providing context if something breaks the rules. [Send us a modmail](https://www.reddit.com/message/compose/?to=/r/{{subreddit}})
 
