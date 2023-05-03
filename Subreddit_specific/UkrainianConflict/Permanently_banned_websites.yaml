@@ -1,0 +1,18 @@
+---
+# Permanently banned websites
+type: any
+domain+url: [thenewsglobe.net]
+action: remove
+comment: |
+    Hi /u/{{author}},
+
+    Your {{kind}} has been removed because it is a link to a permanently banned website.
+
+    You can view this page for more information: /r/UkrainianConflict/wiki/am/permanently_banned_websites
+
+    *****
+action_reason: "Permanently banned websites - u/{{author}} - Website: {{match}}"
+comment_stickied: true
+comment_locked: true
+moderators_exempt: false
+---
