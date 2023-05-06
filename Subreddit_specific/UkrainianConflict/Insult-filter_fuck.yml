@@ -11,7 +11,7 @@ body (regex): ["you('re a)? fuck(ing|tard|er|ed|)", "fuck\\s*(you|heads?|wads?|o
     # People - Putin
     "fuck putin",
     # People - Elon Musk
-    "Fuck you elon", "Fuck Elon", 
+    "Fuck you elon", "Fuck Elon",
     # People - other politicians
     "fuck Mike Pompeo", "Tucker is a Fucker", "Fucker Carlson", "Macron is a fucking",
     # Misc
