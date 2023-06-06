@@ -1,0 +1,24 @@
+---
+# Require all users to have a verified email to post or comment
+type: any
+author:
+  has_verified_email: false
+  account_age: < 2 years
+  satisfy_any_threshold: false
+action: remove
+action_reason: "u/{{author}} doesn't have a verified email (< 2 years)"
+message_subject: "Your {{kind}} in r/{{subreddit}} has been removed"
+message: |
+    Hi u/{{author}}, thank you for your {{kind}} in r/{{subreddit}}.
+
+    However, it has been removed because you don't have a verified email address connected with your account.
+
+    You can find out how to add an email address to your account here: https://support.reddithelp.com/hc/en-us/articles/14569265059860-How-do-I-register-or-add-my-email-to-my-Reddit-account-
+
+    Read more: /r/UkrainianConflict/wiki/am/user_restrictions
+
+    *****
+
+    ^(Categorisation: no verified email)
+moderators_exempt: false
+---
