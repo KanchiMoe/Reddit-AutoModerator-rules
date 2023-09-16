@@ -6,9 +6,9 @@ comment: |
     **Alternative Nitter links:** 「 [.NET](https://nitter.net{{match-2}}) | [.NL](https://nitter.nl{{match-2}}) | [.CZ](https://nitter.cz{{match-2}}) 」
 
     ^NL ^hasn't ^been ^working ^for ^>1 ^months ^as ^of ^Sept ^2023.
-    
+
     _If there are any problems regarding Nitter, [please send us a modmail](https://www.reddit.com/message/compose?to={{subreddit}}&subject=Nitter%20issue)._
-         
+
     *****
 action_reason: Add nitter link
 comment_locked: true
