@@ -1,7 +1,9 @@
 ---
 # Elon Musk crypto scam
 type: submission
-title: ["crypto", "btc", "ETH", "Elon", "bitcoin", "ethereum", "giveaway", "changing lives", "all over social media", "changing peoples lives", "give away", "announced", "announcement", "bull market", "happen this month", "never expected", "This is huge", "made my day", "life changer", "life changing"]
+title: ["crypto", "btc", "ETH", "Elon", "musk", "bitcoin", "ethereum", "giveaway", "changing lives", "all over social media", "changing peoples lives", "give away", "announced", "announcement", "bull market", "happen this month", "never expected", "This is huge", "made my day", "life changer", "life changing", "limited-time", "officially kicking off", "going viral", "biggest thing to happen"]
 action: spam
-action_reason: "Likely musk scam"
+action_reason: "Possible musk scam"
+modmail_subject: "Possible musk scam"
+modmail: "Possible Elon Musk crypto scam - /u/{{author}} - {{permalink}}"
 ---
