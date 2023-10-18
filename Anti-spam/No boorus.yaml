@@ -1,7 +1,7 @@
 ---
 # Warning when booru links are posted
 type: comment
-body (includes): ['gelbooru.com', 'danbooru.donmai.us', 'drawanime.art', 'i-love-cool.com', 'knowyourmeme.com', 'zerochan.net']
+body (includes): ['gelbooru.com', 'danbooru.donmai.us', 'drawanime.art', 'i-love-cool.com', 'knowyourmeme.com', 'zerochan.net', 'pinterest.com', 'vk.com']
 comment: |
 
     Your link, (`{{match}}`) is not considered a valid source to use when giving credit for fan art.
