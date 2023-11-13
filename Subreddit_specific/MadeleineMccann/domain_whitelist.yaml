@@ -1,0 +1,16 @@
+---
+# Domain whitelist
+type: submission
+~domain: [nytimes.com, washingtonpost.com, latimes.com, newyorker.com, miamiherald.com, usatoday.com, wsj.com, theguardian.com, bbc.co.uk, bbc.com, abcnews.go.com, smh.com.au, nbcnews.com, reuters.com, cnn.com, apnews.com, 9news.com.au, news.com.au, bloomberg.com, expresso.pt, jn.pt, tagesspiegel.de, sueddeutsche.de, welt.de, faz.net, youtube.com, netflix.com, podcasts.apple.com, omny.fm]
+action: remove
+action_reason: "Non-approved domain - {{match}}"
+comment: |
+    Hi /u/{{author}}. Thank you for your {{kind}} to r/{{subreddit}}. Sadly, it has been removed for the following reason(s):
+
+    > {{domain}} is not an approved domain.
+
+    _If you think this domain should be whitelisted, please [message the moderators here.](https://www.reddit.com/message/compose?to=/r/{{subreddit}}&subject=Add%20a%20domain%20to%20the%20whitelist)_
+
+    *****
+moderators_exempt: false
+---
