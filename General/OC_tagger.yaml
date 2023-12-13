@@ -1,5 +1,7 @@
 ---
 # OC tagger - tag things as OC if it's mentioned in the title
+# Last updated: 2023-12-13
+# Src: https://github.com/KanchiMoe/Reddit-AutoModerator-rules/blob/master/General/OC_tagger.yaml
 type: submission
 title: ["made by me", "I drew", "drawn by me", "[OC]"]
 set_original_content: true
@@ -10,10 +12,10 @@ message: |
 
     Because of this, it has automatically been marked as 'OC' (original content) - as you drew, made, or created it.
 
-    If this was done incorrectly, please let the r/{{subreddit}} moderators know [by clicking or tapping here](https://www.reddit.com/message/compose?to=/r/{{subreddit}}&subject=OC%20tag%20set%20incorrectly&message=[(optional)%20enter%20more%20information%20here]%0A%0A---%0A%0A{{permalink}}).
-
-    _Otherwise, no action is needed on your part. Your post has not been removed._
+    However, if this was done incorrectly, please let the r/{{subreddit}} moderators know **[by clicking or tapping here](https://www.reddit.com/message/compose?to=/r/{{subreddit}}&subject=OC%20tag%20set%20incorrectly&message=[(optional\)%20enter%20more%20information%20here]%0A%0A---%0A%0A{{permalink}})**.
 
     *****
+
+    _Otherwise, no action is needed on your part. Your post has not been removed._
 moderators_exempt: false
 ---
