@@ -1,0 +1,19 @@
+---
+# OC tagger - tag things as OC if it's mentioned in the title
+type: submission
+title: ["made by me", "I drew", "drawn by me", "[OC]"]
+set_original_content: true
+action_reason: "Detected {{match}} in the title"
+message_subject: "We marked your {{kind}} as OC (original content)"
+message: |
+    Hi /u/{{author}}. We noticed you included "`{{match}}`" in the title of [your {{kind}}]({{permalink}}).
+
+    Because of this, it has automatically been marked as 'OC' (original content) - as you drew, made, or created it.
+
+    If this was done incorrectly, please let the r/{{subreddit}} moderators know [by clicking or tapping here](https://www.reddit.com/message/compose?to=/r/{{subreddit}}&subject=OC%20tag%20set%20incorrectly&message=[(optional)%20enter%20more%20information%20here]%0A%0A---%0A%0A{{permalink}}).
+
+    _Otherwise, no action is needed on your part. Your post has not been removed._
+
+    *****
+moderators_exempt: false
+---
