@@ -1,7 +1,9 @@
 ---
-# Warning when booru links are posted (updated 2023-10-18)
+# Warning when booru links are posted
+# Last updated: 2023-12-15
+# Src: https://github.com/KanchiMoe/Reddit-AutoModerator-rules/blob/noboorus_update/General/Fanart_no_boorus.yaml
 type: comment
-body (includes): ['gelbooru.com', 'danbooru.donmai.us', 'drawanime.art', 'i-love-cool.com', 'knowyourmeme.com', 'zerochan.net', 'pinterest.com', 'vk.com']
+body (includes): ['gelbooru.com', 'danbooru.donmai.us', 'drawanime.art', 'i-love-cool.com', 'knowyourmeme.com', 'zerochan.net', 'pinterest.com', 'vk.com', 'yande.re']
 comment: |
 
     Your link, (`{{match}}`) is not considered a valid source to use when giving credit for fan art.
