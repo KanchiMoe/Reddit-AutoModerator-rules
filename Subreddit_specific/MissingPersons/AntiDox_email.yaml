@@ -1,0 +1,10 @@
+---
+# Anti-dox (email)
+title+body (regex): ['(?!(abuse|help|info|no-?reply|phishing|service|spoof|support)\@)[\w!#$%&\x27*+\-./=?\^\x60{|}~]+\@([\w-]{1,64}\.)+([a-z]{2,16}|xn--[a-z0-9-]{1,60})']
+~title+body: ["@south-wales.police.uk", "missing@police.portlandoregon.gov"]
+~author: ["editorgrrl", "DarkUrGe19"]
+action: remove
+action_reason: "Antidox - email address detected [{{match}}]"
+modmail_subject: "Antidox alert - email"
+modmail: "Type: {{kind}} by /u/{{author}}, Link: {{permalink}}, match: {{match}}."
+---
