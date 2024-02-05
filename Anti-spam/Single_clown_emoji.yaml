@@ -3,7 +3,7 @@
 type: comment
 body (regex): ["^🤡$"]
 action: remove
-action_reason: "Remove comment only containing \'🤡\' by /u/{{author}}"
+action_reason: "Remove comment only containing \"🤡\" by /u/{{author}}"
 message_subject: "Your {{kind}} was removed from /r/{{subreddit}}"
 message: |
   Hi /u/{{author}}. Thank you for your comment in /r/{{subreddit}}. You can [find it here]({{permalink}}).
