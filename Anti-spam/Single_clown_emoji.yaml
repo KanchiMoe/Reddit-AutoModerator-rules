@@ -1,7 +1,7 @@
 ---
-# Single clown face emoji remover - removes comments only contain the clown emoji and nothing else.
+ # Single clown face emoji remover - removes comments only contain the clown emoji and nothing else.
 type: comment
-body (regex): ["^\\U0001F921$", "^\\&#129313;$"] 
+body (regex): ["^\\U0001F921$", "^\\&#129313;$"]
 action: remove
 action_reason: "Remove comment only containing the clown face emoji by /u/{{author}}"
 message_subject: "Your {{kind}} was removed from /r/{{subreddit}}"
