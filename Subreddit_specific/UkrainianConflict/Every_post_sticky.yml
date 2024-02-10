@@ -22,6 +22,7 @@ comment: |
     *****
 
     ^(Your post has not been removed, this message is applied to every successful submission.)
+moderators_exempt: false
 ---
 # Sticky on every submission - Twitter only
 type: submission
@@ -39,11 +40,12 @@ comment: |
 
     *****
 
-    * Is the Twitter account `{{media_author}}` / `{{media_author_url}}` an unreliable source? [**Let us know**](/r/UkrainianConflict/wiki/am/unreliable_sources).
+    * Is the Twitter account [`{{media_author}}`]({{media_author_url}}) an unreliable source? [**Let us know**](/r/UkrainianConflict/wiki/am/unreliable_sources).
 
     * Help our moderators by providing context if something breaks the rules. [Send us a modmail](https://www.reddit.com/message/compose/?to=/r/{{subreddit}})
 
     *****
 
     ^(Your post has not been removed, this message is applied to every successful submission.)
+moderators_exempt: false
 ---
