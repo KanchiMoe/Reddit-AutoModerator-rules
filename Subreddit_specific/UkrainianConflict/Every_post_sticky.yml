@@ -1,3 +1,4 @@
+---
 # Sticky on every submission
 type: submission
 ~domain: [twitter.com]
@@ -21,7 +22,7 @@ comment: |
     *****
 
     ^(Your post has not been removed, this message is applied to every successful submission.)
-moderators_exempt: true
+moderators_exempt: false
 ---
 # Sticky on every submission - Twitter only
 type: submission
@@ -46,4 +47,5 @@ comment: |
     *****
 
     ^(Your post has not been removed, this message is applied to every successful submission.)
+moderators_exempt: false
 ---
