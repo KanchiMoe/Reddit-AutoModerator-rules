@@ -1,0 +1,23 @@
+---
+# 'fuck' insult detection - reporting possible insults containing "fuck" and other variations
+# (BC removed "yourself" and "yourselves" from Regex temporarily)
+type: any
+body (regex): ["you('re a)? fuck(ing|tard|er|ed|)", "fuck\\s*(you|heads?|wads?|offs?|heads?|faces?)", fucker]
+~title+body: [
+    # Countries
+    "fuck you russia", "Russia to fuck off", "fuck off to Russia", "fuck off russia", "Russians fuck off", "Fuck you Turkey", "Yanks to fuck off", "Ru just needs to fuck off", "Hungary can fuck off", "Russian fucker", "Fuck off China", "Fuck you China", "Fuck you Switzerland",
+    # People - Trump
+    "fuck trump", "Fuck you trump",
+    # People - Putin
+    "fuck putin", "Fuck you Putin", "fuck off Puttie", "Fuck you Pootin", "Fuck you Putler",
+    # People - Elon Musk
+    "Fuck you elon", "Fuck Elon", "Elon Fuck off", "Fuck musk",
+    # People - other politicians
+    "fuck Mike Pompeo", "Tucker is a Fucker", "Fucker Carlson", "Macron is a fucking", "Fuck off Pooh", "Fucker Tarlson", "Fuck you scholz", "Fuck you UN", "Fucker Whoreson", "Fucker Tsarlson", "Fucker Tsarsbane", "Tucker the fucker",
+    # Misc
+    "that poor fucker"
+]
+action: report
+action_reason: "Possible insult using 'fuck'. Matched on: {{match}}"
+ignore_blockquotes: true
+---
