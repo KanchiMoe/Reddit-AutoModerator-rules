@@ -1,15 +1,17 @@
 ---
 # Nitter mirros - post a comment with links to Nitter mirrors.
-# Last updated: 2024-01-15
+# Last updated: 2024-03-19
 # Src: https://github.com/KanchiMoe/Reddit-AutoModerator-rules/blob/master/Subreddit_specific/UkrainianConflict/Nitter_link.yml
 type: submission
 url+body (regex): 'twitter\.com(?# Making sure not to match it in the text part of the hyperlink >> )(?!\S+\] ?\()(?# Matching the rest of the url >> )([^\s\)?]+)'
 comment: |
-    **Alternative Nitter links:**「[nitter.fdn.fr](https://nitter.fdn.fr{{match-2}}) | [nitter.unixfox.eu](https://nitter.unixfox.eu/{{match-2}}) | [nitter.moomoo.me](https://nitter.moomoo.me{{match-2}})」
+    **Alternative Nitter links:** 「[nitter.privacydev.net](https://nitter.privacydev.net{{match-2}}) | [nitter.poast.org](https://nitter.poast.org{{match-2}})」
 
     *****
 
-    Nitter may stop working in the imminent future. Nitter.cz stopped working on 15/02/2024. [See this arstechnica article](https://arstechnica.com/tech-policy/2024/02/twitter-front-end-nitter-dies-as-musk-wins-war-against-third-party-services/).
+    These Nitter instances may stop work at any time as [Twitter](https://www.reddit.com/media?url=https%3A%2F%2Fi.redd.it%2Fnxqezhko6qfb1.jpg) blocks them. [See this arstechnica article for more information](https://arstechnica.com/tech-policy/2024/02/twitter-front-end-nitter-dies-as-musk-wins-war-against-third-party-services/).
+
+    Use [this site to find other Nitter instances that may work](https://status.d420.de/).
 
     _If there are any problems regarding Nitter, [please send us a modmail](https://www.reddit.com/message/compose?to={{subreddit}}&subject=Nitter%20issue)._
 
