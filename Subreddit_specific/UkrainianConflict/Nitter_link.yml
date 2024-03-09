@@ -1,6 +1,6 @@
 ---
 # Nitter mirros - post a comment with links to Nitter mirrors.
-# Last updated: 2024-03-19
+# Last updated: 2024-03-09
 # Src: https://github.com/KanchiMoe/Reddit-AutoModerator-rules/blob/master/Subreddit_specific/UkrainianConflict/Nitter_link.yml
 type: submission
 url+body (regex): 'twitter\.com(?# Making sure not to match it in the text part of the hyperlink >> )(?!\S+\] ?\()(?# Matching the rest of the url >> )([^\s\)?]+)'
