@@ -1,7 +1,7 @@
 ---
 # Comment when a link is blocked by reddit and mods can't approve it
 # Last updated: 2024-04-21
-# src: 
+# src:
 type: any
 body+url (includes): ["bitchute.com"]
 action: remove
