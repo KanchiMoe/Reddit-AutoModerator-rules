@@ -3,7 +3,7 @@
 # Last updated: 2024-01-22
 # Src: https://github.com/KanchiMoe/Reddit-AutoModerator-rules/blob/master/General/OC_tagger.yaml
 type: submission
-title: ["made by me", "I drew", "drawn by me", "[OC]", "art by me", "my art"]
+title: ["made by me", "I drew", "drawn by me", "[OC]", "(oc)", "art by me", "my art"]
 set_original_content: true
 action_reason: "Detected {{match}} in the title"
 message_subject: "We marked your {{kind}} as OC (original content)"
