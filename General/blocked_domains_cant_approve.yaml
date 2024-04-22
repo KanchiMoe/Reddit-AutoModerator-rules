@@ -1,0 +1,19 @@
+---
+# Comment when a link is blocked by reddit and mods can't approve it
+# Last updated: 2024-04-22
+# src:
+type: any
+body+url (includes, regex):
+    - "https?://(?:www\\.)?(sevastopol-news\\.com|bitchute\\.com|southfront\\.org|iswnews\\.com|rt\\.com|tass\\.com)"
+action: remove
+action_reason: "{{kind}} includes a link to a domain blocked by Reddit. Match: [{{match-2}}]"
+comment: |
+  Sorry /u/{{author}}, but Reddit is currently automatically removing any {{kind}} that contain links to `{{match-2}}`.
+
+  **We can not restore your {{kind}}**. This restriction has been placed by Reddit itself. There is nothing we (as moderators) can do about bypassing or restoring it. Please **do not** message us asking us to restore it, because we can't.
+
+  We can't restore your {{kind}}, even if you remove it. You will need to resubmit it entirely with the link to `{{match-2}}` removed.
+
+  *****
+moderators_exempt: false
+---
