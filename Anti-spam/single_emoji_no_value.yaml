@@ -1,11 +1,11 @@
 ---
- # Single emoji remover - removes comments only contain some single emojis
+# Single emoji remover - removes comments only contain some single emojis
 type: comment
 body (regex): [
     "^\\U0001F921$", "^\\&#129313;$",  # Clown
     "^\\uE412$", "^\\&#58386;$",       # Crying 1
     "^\\U0001F602$", "^\\&#58386;$"    # Crying 2
-    ]
+]
 action: remove
 action_reason: "Remove comment only containing single emoji. Author [/u/{{author}}]. Match [{{match}}]"
 message_subject: "Your {{kind}} was removed from /r/{{subreddit}}"
