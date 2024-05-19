@@ -1,0 +1,23 @@
+---
+ # Single emoji remover - removes comments only contain some single emojis
+type: comment
+body (regex): [
+    "^\\U0001F921$", "^\\&#129313;$",  # Clown
+    "^\\uE412$", "^\\&#58386;$",       # Crying 1
+    "^\\U0001F602$", "^\\&#58386;$"    # Crying 2
+    ]
+action: remove
+action_reason: "Remove comment only containing single emoji. Author [/u/{{author}}]. Match [{{match}}]"
+message_subject: "Your {{kind}} was removed from /r/{{subreddit}}"
+message: |
+    Hi /u/{{author}}, [**your {{kind}}**]({{permalink}}) in /r/{{subreddit}} was removed for the following reasons:
+
+    > **Only commenting "{{match}}" does not add anything to the conversation.**
+
+    > We encourage meaningful contributions and constructive discussions in /r/{{subreddit}}. If you have any questions or would like to share your thoughts on the topic, please feel free to do so in a more detailed manner.
+
+    *****
+
+    _^Triggered ^incorrectly? ^^\(ie, ^^comment ^^does ^^not ^^only ^^contain ^^"{{match}}"\) ^[Let](https://www.reddit.com/message/compose/?to=/r/{{subreddit}}) ^[us](https://www.reddit.com/message/compose/?to=/r/{{subreddit}}) ^[know.](https://www.reddit.com/message/compose/?to=/r/{{subreddit}})_
+moderators_exempt: false
+---
