@@ -19,6 +19,3 @@ moderators_exempt: false
 # remove ria as doesn't appear to be filtered - (?:.*\\.)?ria\\.com
 # remove .ru, needs rework
 ---
-
-
-
