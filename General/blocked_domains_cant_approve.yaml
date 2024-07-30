@@ -16,7 +16,8 @@ comment: |
 
   *****
 
-  ^Don't ^reply ^to ^this ^directly. [^Any ^questions, ^send ^us ^a ^modmail ](https://www.reddit.com/message/compose/?to=/r/{{subreddit}}&subject={{permalink}})_
+  _^Don't ^reply ^to ^this ^directly. [^Any ^questions, ^send ^us ^a ^modmail ](https://www.reddit.com/message/compose/?to=/r/{{subreddit}}&subject={{permalink}})_
+comment_locked: true
 moderators_exempt: false
 ---
 # remove ria as doesn't appear to be filtered - (?:.*\\.)?ria\\.com
