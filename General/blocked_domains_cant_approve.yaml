@@ -1,10 +1,10 @@
 ---
 # Comment when a link is blocked by reddit and mods can't approve it
-# Last updated: 2024-04-22
+# Last updated: 2024-07-30
 # src: https://github.com/KanchiMoe/Reddit-AutoModerator-rules/blob/master/General/blocked_domains_cant_approve.yaml
 type: any
 body+url (includes, regex):
-    - "https?://(?:www\\.)?(sevastopol-news\\.com|bitchute\\.com|southfront\\.org|iswnews\\.com|rt\\.com|tass\\.com|theins\\.ru|(?:.*\\.)?rt\\.com|.+\\.ru)"
+    - "https?://(?:www\\.)?(sevastopol-news\\.com|bitchute\\.com|southfront\\.org|iswnews\\.com|rt\\.com|tass\\.com|(?:.*\\.)?rt\\.com|pravda-en\\.com|tampafp\\.com)"
 action: remove
 action_reason: "{{kind}} includes a link to a domain blocked by Reddit. Match: [{{match-2}}]"
 comment: |
@@ -15,7 +15,9 @@ comment: |
   We can't restore your {{kind}} even if you remove the link. You will need to resubmit it entirely with the links removed.
 
   *****
+
+  ^Don't ^reply ^to ^this ^directly. [^Any ^questions, ^send ^us ^a ^modmail ](https://www.reddit.com/message/compose/?to=/r/{{subreddit}}&subject={{permalink}})_
 moderators_exempt: false
+---
 # remove ria as doesn't appear to be filtered - (?:.*\\.)?ria\\.com
 # remove .ru, needs rework
----
