@@ -20,7 +20,7 @@ police_phone_numbers: [
   "(800) 382-0689",
   "(301) 279-8000",
   "(519) 661-5670",
-  "(253) 931-3080",# Auburn Police Department 
+  "(253) 931-3080",# Auburn Police Department
   "973-285-2900",
   "305-715-3300",
   "305-535-4300",
@@ -28,7 +28,7 @@ police_phone_numbers: [
   "540-658-4400",
   "518-584-1800",
   "508-830-4218",
-  "303-762-2438", 
+  "303-762-2438",
   "304-258-1067",
   "304-258-0305",
   "705-876-1122",
@@ -65,18 +65,18 @@ police_phone_numbers: [
   "732-873-5533",
   "902-679-5555",
   "718-574-1605",
-  "423-698-2525", #  Chattanooga Police Department (Tennessee)
-  "306-777-6500", #  Regina (Saskatchewan) Police
-  "204-986-6250", #  Winnipeg Police
-  "705-675-9171", #  Greater Sudbury Police
-  "937-333-2677", #  Dayton’s PD
-  "931-684-5811", #  Shelbyville Police Department (Tennessee)
-  "931-684-3232", #  Bedford County Sheriff’s Office
-  "850-891-4200", #  "TPD"
-  "506-857-2400", #  Codiac Regional RCMP
-  "479-968-0911", #  Pottsville Police Department
-  "705-264-1201", #  Timmins Police
-  "416-808-2222", #  Toronto Police Service
-  "416-808-3300", #  Toronto Police Service
-  "403-406-2200"  #  Red Deer RCMP 
+  "423-698-2525", # Chattanooga Police Department (Tennessee)
+  "306-777-6500", # Regina (Saskatchewan) Police
+  "204-986-6250", # Winnipeg Police
+  "705-675-9171", # Greater Sudbury Police
+  "937-333-2677", # Dayton’s PD
+  "931-684-5811", # Shelbyville Police Department (Tennessee)
+  "931-684-3232", # Bedford County Sheriff’s Office
+  "850-891-4200", # "TPD"
+  "506-857-2400", # Codiac Regional RCMP
+  "479-968-0911", # Pottsville Police Department
+  "705-264-1201", # Timmins Police
+  "416-808-2222", # Toronto Police Service
+  "416-808-3300", # Toronto Police Service
+  "403-406-2200"  # Red Deer RCMP
 ]
