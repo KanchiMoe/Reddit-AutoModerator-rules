@@ -1,0 +1,9 @@
+---
+# Removes negative AI comments
+# src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/general/anti-ai.yaml
+# Last updated: 2024-09-04
+type: comment
+body: ["ai artists", "Fuck AI art", "AI fingers", "AI bullshit", "shitty ai art", 'ai', 'a.i.']
+action: remove
+action_reason: "Anti-ai {{kind}}. Match: [{{match}}]"
+---
