@@ -1,0 +1,15 @@
+---
+# Remove and alert on key resellers
+# src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/subreddit_specific/crunchyroll/key_reseller.yaml
+# Last updated: 2024-10-07
+type: any
+body+domain+url (includes): [vccdigital, kscode, gg.deals, keycheap, cdkey, "free 99", free99, Gamsgo, gogamsgo, kinguin, cheapzy, k4g, g2g, g2a]
+action: remove
+action_reason: "Key reseller. Author [/u/{{author}}] Match [{{match}}]"
+modmail_subject: "Possible key reseller"
+modmail: |
+    The {{kind}} linked below has been removed as a possible key reseller. Please review whether to ban the user.
+
+    **Author:** /u/{{author}}. **Match:** {{match}} **Link to {{kind}}:** {{permalink}}
+moderators_exempt: false
+---
