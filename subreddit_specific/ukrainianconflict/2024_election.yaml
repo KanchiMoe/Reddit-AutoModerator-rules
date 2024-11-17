@@ -1,0 +1,33 @@
+---
+#
+# As of 2024-11-17, this rule has been deprecated and is no longer in use.
+#
+---
+# Filters submissions that may be related to the election rather than ukraine
+# Last updated: 2024-11-17
+type: submission
+title: ["trump", "Kamala", "Harris", "Biden", "tromp", "Blden", "Trmp", "pr3sident"]
+action: remove
+comment: |
+    Hi /u/{{author}}, your {{kind}} to /r/{{subreddit}} has been removed because:
+
+    > Possibly related to the US 2024 election, and not directly related to the Ukraine conflict.
+
+    As the US election draws near, we have seen a rise in posts that are not directly related to the Ukraine conflict.
+    
+    These posts are better suited elsewhere, such as /r/news, /r/politics or /r/uspolitics.
+
+    *****
+
+    **However**, if your post _is_ related to the Ukraine conflict, use the link below to let the moderators know.
+
+    「[**My post is related to the conflict**](https://www.reddit.com/message/compose?to=/r/{{subreddit}}&subject={{kind}}%20is%20related%20to%20conflict&message=\(add%20any%20addational%20comments%20you%20may%20think%20will%20be%20useful%20here.\)%0A%0A-----%0A%0AMods:%20{{kind}}%20caught%20by%202024%20US%20election%20filter.%0A%0ALink:%20{{permalink}}) | [I need assistance](https://www.reddit.com/message/compose?to=/r/{{subreddit}}&subject=Assistance requested for {{kind}} caught by US 2024 election filter&message=\(add any addational comments you may think will be useful here.\)%0A%0A-----%0A%0AMods: Assistance requested for {{kind}} caught by 2024 US election filter.%0A%0ALink: {{permalink}})」
+
+    _Do not attempt to get around our filter instead of waiting. Doing so may result in being banned._
+
+    *****
+action_reason: "Post possibly related to 2024 US election. Author: [/u/{{author}}] Match: [{{match}}]"
+moderators_exempt: false
+comment_stickied: true
+comment_locked: true
+---
