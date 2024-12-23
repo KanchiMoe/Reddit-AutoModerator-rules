@@ -1,0 +1,25 @@
+---
+# Temporary sticky on any hannah kobayashi. See under the rule on Github for more info.
+# src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/subreddit_specific/missingpersons/temporary_hannah_kobayashi.yaml
+# Last updated: 2024-11-22
+type: submission
+title+body+url (includes): ["hannah kobayashi", "hannah_kobayashi", "hannah-kobayashi"]
+comment_stickied: true
+comment_locked: true
+comment: |
+    If you think you know the whereabouts, or have any information, you should contact:
+
+    * Los Angeles Police Department on (877) 275-5273.
+    * California Department of Justice on 800-222-3463, or (916) 210-3119 or missing.persons@doj.ca.gov or via [this page on oag.ca.gov](https://oag.ca.gov/missing/contact).
+
+    And not random people on social media (including reddit and Facebook).
+
+    *****
+
+    「[Message the moderators](https://www.reddit.com/message/compose/?to=/r/{{subreddit}})」| (Case 249932616)
+moderators_exempt: false
+---
+#
+# This person is currently a popular case on the subreddit.
+# In order to promote only contacting the police, this will sticky a comment if their name appears in the title or URL.
+# This rule will get deprecated if they are found.
