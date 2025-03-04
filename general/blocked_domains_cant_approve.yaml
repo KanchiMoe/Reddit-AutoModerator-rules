@@ -1,10 +1,10 @@
 ---
 # Comment when a link is blocked by reddit and mods can't approve it
-# Last updated: 2024-07-30
+# Last updated: 2025-03-04
 # src: https://github.com/KanchiMoe/Reddit-AutoModerator-rules/blob/master/General/blocked_domains_cant_approve.yaml
 type: any
 body+url (includes, regex):
-    - "https?://(?:www\\.)?(sevastopol-news\\.com|bitchute\\.com|southfront\\.org|iswnews\\.com|rt\\.com|tass\\.com|(?:.*\\.)?rt\\.com|pravda-en\\.com|tampafp\\.com|cointelegraph\\.com)"
+    - "https?://(?:www\\.)?(sevastopol-news\\.com|bitchute\\.com|southfront\\.org|iswnews\\.com|rt\\.com|tass\\.com|(?:.*\\.)?rt\\.com|pravda-en\\.com|tampafp\\.com|cointelegraph\\.com|windowoneurasia2.blogspot\\.com)"
 action: remove
 action_reason: "{{kind}} includes a link to a domain blocked by Reddit. Match: [{{match-2}}]"
 comment: |
