@@ -1,0 +1,15 @@
+---
+#
+# This rule has been deprecated and is no longer in use.
+# It also wasn't created by me.
+#
+---
+# remove non-contrib comments
+type: comment
+body_shorter_than: 11
+is_top_level: true
+action: remove
+action_reason: non-contrib comment
+ignore_blockquotes: true
+message: |
+    Your [{{kind}}]({{permalink}}) in /r/{{subreddit}} was automatically removed as a non-contributing comment - you are free to comment but please try to contribute to the conversation.

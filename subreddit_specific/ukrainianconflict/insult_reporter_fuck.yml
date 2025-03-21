@@ -1,6 +1,7 @@
 ---
 # 'fuck' insult detection - reporting possible insults containing "fuck" and other variations
-# (BC removed "yourself" and "yourselves" from Regex temporarily)
+# src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/refs/heads/master/subreddit_specific/ukrainianconflict/insult_reporter_fuck.yml
+# Last updated: 2025-03-10
 type: any
 body (regex): ["you('re a)? fuck(ing|tard|er|ed|)", "fuck\\s*(you|heads?|wads?|offs?|heads?|faces?)", fucker]
 ~title+body: [
@@ -9,9 +10,9 @@ body (regex): ["you('re a)? fuck(ing|tard|er|ed|)", "fuck\\s*(you|heads?|wads?|o
     # People - Trump
     "fuck trump", "Fuck you trump",
     # People - Putin
-    "fuck putin", "Fuck you Putin", "fuck off Puttie", "Fuck you Pootin", "Fuck you Putler",
+    "fuck putin", "Fuck you Putin", "fuck off Puttie", "Fuck you Pootin", "Fuck you Putler", "Fuck Off putin",
     # People - Elon Musk
-    "Fuck you elon", "Fuck Elon", "Elon Fuck off", "Fuck musk",
+    "Fuck you elon", "Fuck Elon", "Elon Fuck off", "Fuck musk", "Musk should fuck off",
     # People - other politicians
     "fuck Mike Pompeo", "Tucker is a Fucker", "Fucker Carlson", "Macron is a fucking", "Fuck off Pooh", "Fucker Tarlson", "Fuck you scholz", "Fuck you UN", "Fucker Whoreson", "Fucker Tsarlson", "Fucker Tsarsbane", "Tucker the fucker",
     # Misc
