@@ -1,0 +1,13 @@
+---
+# Filters items on 1 report. Useful for extreamly low activity subreddits.
+# src: xxx
+# Last updated: 2025-03-25
+reports: 1
+action: filter
+modmail_subject: "{{kind}} filtered after 1 report"
+modmail: |
+  {{permalink}}
+
+  The above {{kind}} by /u/{{author}} has been filtered after recieving 1 report.
+action_reason: filter
+---
