@@ -1,14 +1,14 @@
 ---
 # 'fuck' insult detection - reporting possible insults containing "fuck" and other variations
 # src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/refs/heads/master/subreddit_specific/ukrainianconflict/insult_reporter_fuck.yml
-# Last updated: 2025-03-10
+# Last updated: 2025-03-30
 type: any
 body (regex): ["you('re a)? fuck(ing|tard|er|ed|)", "fuck\\s*(you|heads?|wads?|offs?|heads?|faces?)", fucker]
 ~title+body: [
     # Countries
-    "fuck you russia", "Russia to fuck off", "fuck off to Russia", "fuck off russia", "Russians fuck off", "Fuck you Turkey", "Yanks to fuck off", "Ru just needs to fuck off", "Hungary can fuck off", "Russian fucker", "Fuck off China", "Fuck you China", "Fuck you Switzerland",
+    "fuck you russia", "Russia to fuck off", "fuck off to Russia", "fuck off russia", "Russians fuck off", "Fuck you Turkey", "Yanks to fuck off", "Ru just needs to fuck off", "Hungary can fuck off", "Russian fucker", "Fuck off China", "Fuck you China", "Fuck you Switzerland", "Fuck off USA",
     # People - Trump
-    "fuck trump", "Fuck you trump",
+    "fuck trump", "Fuck you trump", "Trump to fuck off",
     # People - Putin
     "fuck putin", "Fuck you Putin", "fuck off Puttie", "Fuck you Pootin", "Fuck you Putler", "Fuck Off putin",
     # People - Elon Musk
@@ -19,6 +19,6 @@ body (regex): ["you('re a)? fuck(ing|tard|er|ed|)", "fuck\\s*(you|heads?|wads?|o
     "that poor fucker"
 ]
 action: report
-action_reason: "Possible insult using 'fuck'. Matched on: {{match}}"
+action_reason: "Possible insult using 'fuck'. Match [{{match}}]"
 ignore_blockquotes: true
 ---
