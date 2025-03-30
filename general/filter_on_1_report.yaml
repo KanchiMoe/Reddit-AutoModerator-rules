@@ -9,5 +9,5 @@ modmail: |
   {{permalink}}
 
   The above {{kind}} by /u/{{author}} has been filtered after recieving 1 report.
-action_reason: filter
+action_reason: "Filtered after recieving 1 report"
 ---
