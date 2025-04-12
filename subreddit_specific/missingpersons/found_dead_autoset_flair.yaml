@@ -1,7 +1,7 @@
 ---
 # If any sort of "found dead" type words are used in title, automatically set the post flair
 type: submission
-title (includes): ["found dead", "body found", "confirmed dead", "remains found"]
+title (includes): ["found dead", "body found", "confirmed dead", "remains found", "Body of", "found strangled", "found deceased"]
 set_flair:
   template_id: e95f4f14-935d-11e3-949c-12313d00c1a4
 message_subject: "We've automatically set a flair on your post"
