@@ -1,6 +1,6 @@
 ---
 # Removes comments that get edited as part of react.dev. The redaction replaces comments with useless information and spams links.
-# src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/refs/heads/master/general/insult_reporter_orcs.yml
+# src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/refs/heads/master/general/redact.dev_cleanup.yaml
 # Last updated: 2025-03-30
 type: comment
 is_edited: true

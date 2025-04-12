@@ -1,0 +1,20 @@
+---
+# Remove submissions to petition sites
+# src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/subreddit_specific/missingpersons/remove_petition_submissions.yaml
+# Last updated: 2025-04-12
+domain: [act.rootsaction.org, actblue.com, action.sumofus.org, activism.thenation.com, avaaz.org, change.org, chn.ge, chng.it, credomobilize.com, demandprogress.org, easypolls.net, go.berniesanders.com, gopetition.com, leftaction.com, moveon.org, petitions.whitehouse.gov, signon.org, startjoin.com, strawpoll.me, takepart.com, thepetitionsite.com, watchdog.net]
+action: remove
+comment: |
+  Hi /u/{{author}}. Thanks for your {{kind}} to /r/{{subreddit}}. Sadly, it has been removed for the following reason(s):
+
+  > **Link to petition site.**
+
+  > /r/{{subreddit}} requires that all submissions are able to verify that the person is genuinely missing, and as such typically only allows links to news websites, police websites, or recognised charities or non-profits to verify the authenticity that someone is genuinely missing.
+
+  > We also don't feel that /r/{{subreddit}} is a suitable place for such posts.
+
+  *****
+comment_locked: true
+comment_stickied: true
+action_reason: "Submission to petition site. Author [/u/{{author}}], domain: [{{match}}]"
+---
