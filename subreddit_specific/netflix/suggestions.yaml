@@ -1,0 +1,19 @@
+---
+# Removes suggestions for Netflix
+# src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/subreddit_specific/netflix/suggestions.yaml
+# Last updated: 2025-04-12
+title: ['hey netflix', 'netflix suggestion', 'suggestion', 'suggestion for netflix', 'Netflix should', DAE, 'wish Netflix', 'Netflix would', 'you please', 'netflix please']
+action: remove
+comment: |
+  Hi /u/{{author}}. Thanks for your post to /r/{{subreddit}}. Sadly, it has been removed for the following reason(s):
+
+  > **Suggestion for Netflix.** - [rule 9](/r/{{subreddit}}/about/rules).
+
+  > Suggestions for Netflix should be directed to [Netflix's customer services team](https://help.netflix.com/en/contactus). Sending them there is the best way to get them addressed.
+
+  > The same suggestions get submitted on a weekly basis, among other reasons. Please _do not_ resubmit the post with a different title. It will be removed and your account may be banned.
+
+  *****
+
+action_reason: "Netflix suggestion. Author: [/u/{{author}}] Match: [{{match}}]"
+---
