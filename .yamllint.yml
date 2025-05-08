@@ -18,6 +18,7 @@ rules:
   float-values: disable
   hyphens: enable
   indentation: enable
+    spaces: consistent
   key-duplicates: enable
   key-ordering: disable
   line-length: disable
@@ -28,5 +29,4 @@ rules:
   trailing-spaces: enable
   truthy:
     level: warning
-  indentation:
-    spaces: consistent
+
