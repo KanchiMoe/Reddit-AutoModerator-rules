@@ -19,7 +19,7 @@ title+body: ["shit", piece of shit, shitface]
   # People - others
   # Misc
   "piece of shit propaganda",
-  ]
+]
 action: report
 report_reason: "Possible insult using 'shit'. Match [{{match}}]"
 ignore_blockquotes: true

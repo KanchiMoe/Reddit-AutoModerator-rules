@@ -14,7 +14,7 @@ title+body: ["cunt"]
   "scum like Erdogan",
   # People - others
   # Misc
-  ]
+]
 action: report
 report_reason: "Possible insult using 'scum'. Match [{{match}}]"
 ignore_blockquotes: true

@@ -15,7 +15,7 @@ title+body: ["cunt"]
   "Joe Biden hasn't been a cunt", "Macron was a cunt"
   # People - others
   # Misc
-  ]
+]
 action: report
 report_reason: "Possible insult using 'cunt'. Match [{{match}}]"
 ignore_blockquotes: true

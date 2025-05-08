@@ -18,7 +18,7 @@ title+body: [asshole, asshat]
   "Erdogan is an asshole", "Erdogan's asshole", "asshole mike johnson", "asshole Johnson",
   # People - others
   # Misc
-  ]
+]
 action: report
 report_reason: "Possible insult using 'asshole'. Match [{{match}}]"
 ignore_blockquotes: true
