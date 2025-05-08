@@ -1,0 +1,26 @@
+---
+# 'shit' insult detection - reporting possible insults containing "shit" and other variations
+# src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/refs/heads/master/subreddit_specific/ukrainianconflict/insult_reporter_shit.yml
+# Last updated: 2025-05-08
+type: comment
+title+body: ["shit", piece of shit, shitface]
+~title+body: [
+  # Countries
+  "Russian piece of shit",
+  # People - Trump
+  "Trump is a piece of shit",
+  # People - Putin
+  "Putin is a piece of shit",
+  # People - Elon Musk
+  "Musk is a piece of shit", "Elon is a piece of shit", "musk is still a piece of shit",
+  # People - Trump
+  # People - other politicians
+  "Erdogan is a piece of shit", "Schroeder - a huge piece of shit", "George Bush is a piece of shit", "McCarthy is such a piece of shit", "Piece of shit Mike Johnson",
+  # People - others
+  # Misc
+  "piece of shit propaganda",
+]
+action: report
+report_reason: "Possible insult using 'shit'. Match [{{match}}]"
+ignore_blockquotes: true
+---
