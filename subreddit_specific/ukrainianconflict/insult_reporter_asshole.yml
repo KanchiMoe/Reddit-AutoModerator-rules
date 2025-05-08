@@ -1,0 +1,25 @@
+---
+# 'asshole' insult detection - reporting possible insults containing "asshole" and other variations
+# src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/refs/heads/master/subreddit_specific/ukrainianconflict/insult_reporter_asshole.yml
+# Last updated: 2025-05-08
+type: comment
+title+body: [asshole, asshat]
+~title+body: [
+  # Countries
+  "China is asshole",
+  # People - Trump
+  "Trump’s asshole",
+  # People - Putin
+  "asshole putin", "Putin is an Asshat",
+  # People - Elon Musk
+  "Musk's an asshole", "Musk is clearly an asshole", "Musk is an asshole", 
+  # People - Trump
+  # People - other politicians
+  "Erdogan is an asshole", "Erdogan's asshole", "asshole mike johnson", "asshole Johnson",
+  # People - others
+  # Misc
+  ]
+action: report
+report_reason: "Possible insult using 'asshole'. Match [{{match}}]"
+ignore_blockquotes: true
+---

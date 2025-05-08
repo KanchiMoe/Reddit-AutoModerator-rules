@@ -1,0 +1,22 @@
+---
+# 'cunt' insult detection - reporting possible insults containing "cunt" and other variations
+# src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/refs/heads/master/subreddit_specific/ukrainianconflict/insult_reporter_cunt.yml
+# Last updated: 2025-05-08
+type: comment
+title+body: ["cunt"]
+~title+body: [
+  # Countries
+  # People - Trump
+  # People - Putin
+  # People - Elon Musk
+  "cunt like Musk", "Musk is a Cunt", "Musk you cunt", "Elon is such a cunt",
+  # People - Trump
+  # People - other politicians
+  "Joe Biden hasn't been a cunt", "Macron was a cunt"
+  # People - others
+  # Misc
+  ]
+action: report
+report_reason: "Possible insult using 'cunt'. Match [{{match}}]"
+ignore_blockquotes: true
+---

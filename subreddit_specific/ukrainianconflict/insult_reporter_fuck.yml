@@ -3,18 +3,18 @@
 # src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/refs/heads/master/subreddit_specific/ukrainianconflict/insult_reporter_fuck.yml
 # Last updated: 2025-03-30
 type: any
-body (regex): ["you('re a)? fuck(ing|tard|er|ed|)", "fuck\\s*(you|heads?|wads?|offs?|heads?|faces?)", fucker]
+body (regex): ["you('re a)? fuck(ing|tard|er|ed|)", "fuck\\s*(you|heads?|wads?|offs?|heads?|faces?)", fucker, fuckhead, fuck head]
 ~title+body: [
     # Countries
-    "fuck you russia", "Russia to fuck off", "fuck off to Russia", "fuck off russia", "Russians fuck off", "Fuck you Turkey", "Yanks to fuck off", "Ru just needs to fuck off", "Hungary can fuck off", "Russian fucker", "Fuck off China", "Fuck you China", "Fuck you Switzerland", "Fuck off USA",
+    "fuck you russia", "Russia to fuck off", "fuck off to Russia", "fuck off russia", "Russians fuck off", "Fuck you Turkey", "Yanks to fuck off", "Ru just needs to fuck off", "Hungary can fuck off", "Russian fucker", "Fuck off China", "Fuck you China", "Fuck you Switzerland", "Fuck off USA", "America says fuck off", "tells America to fuck off", "Fuck you, Russia",
     # People - Trump
     "fuck trump", "Fuck you trump", "Trump to fuck off",
     # People - Putin
-    "fuck putin", "Fuck you Putin", "fuck off Puttie", "Fuck you Pootin", "Fuck you Putler", "Fuck Off putin",
+    "fuck putin", "Fuck you Putin", "fuck off Puttie", "Fuck you Pootin", "Fuck you Putler", "Fuck Off putin", "fuckhead Putin",
     # People - Elon Musk
-    "Fuck you elon", "Fuck Elon", "Elon Fuck off", "Fuck musk", "Musk should fuck off",
+    "Fuck you elon", "Fuck Elon", "Elon Fuck off", "Fuck musk", "Musk should fuck off", "Fuck you Musk", "Elon Musk to fuck off", "Elon is a racist fuckhead",
     # People - other politicians
-    "fuck Mike Pompeo", "Tucker is a Fucker", "Fucker Carlson", "Macron is a fucking", "Fuck off Pooh", "Fucker Tarlson", "Fuck you scholz", "Fuck you UN", "Fucker Whoreson", "Fucker Tsarlson", "Fucker Tsarsbane", "Tucker the fucker",
+    "fuck Mike Pompeo", "Tucker is a Fucker", "Fucker Carlson", "Macron is a fucking", "Fuck off Pooh", "Fucker Tarlson", "Fuck you scholz", "Fuck you UN", "Fucker Whoreson", "Fucker Tsarlson", "Fucker Tsarsbane", "Tucker the fucker", "Mccarthy you fucking",
     # Misc
     "that poor fucker"
 ]
