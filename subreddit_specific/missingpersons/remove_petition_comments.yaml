@@ -1,8 +1,22 @@
 ---
-# Remove submissions to petition sites
+# Remove comments to petition sites
 # src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/subreddit_specific/missingpersons/remove_petition_comments.yaml
-# Last updated: 2025-04-12
-body: [act.rootsaction.org, actblue.com, action.sumofus.org, activism.thenation.com, avaaz.org, change.org, chn.ge, chng.it, credomobilize.com, demandprogress.org, easypolls.net, go.berniesanders.com, gopetition.com, leftaction.com, moveon.org, petitions.whitehouse.gov, signon.org, startjoin.com, strawpoll.me, takepart.com, thepetitionsite.com, watchdog.net]
+# Last updated: 2025-07-01
+type: comment
+domain: [act.rootsaction.org, actblue.com, action.sumofus.org, activism.thenation.com, avaaz.org, change.org, chn.ge, chng.it, credomobilize.com, demandprogress.org, easypolls.net, go.berniesanders.com, gopetition.com, leftaction.com, moveon.org, petitions.whitehouse.gov, signon.org, startjoin.com, strawpoll.me, takepart.com, thepetitionsite.com, watchdog.net]
 action: remove
+message_subject: "Your {{kind}} was removed from /r/{{subreddit}}"
+message: |
+  Hi /u/{{author}}, thanks for your {{kind}} to /r/{{subreddit}}. Sadly, it has been removed for the following reason(s):
+
+  > ### Link to petition site.
+
+  > We don't feel that /r/{{subreddit}} is an appropriate subreddit for petition canvasing.
+
+  > You may want to try in a subreddit for your local area or country instead.
+
+  *****
+
+  *^(Your {{kind}} can be found here: {{permalink}})*
 action_reason: "Comment with link to petition site. Author [/u/{{author}}], domain: [{{match}}]"
 ---
