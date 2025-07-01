@@ -1,0 +1,27 @@
+---
+# Auto-set a flair if any variation of "found deceased" is found in a submission's title
+# src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/subreddit_specific/missingpersons/found_deceased_autoset_flair.yaml
+# Last updated: 2025-07-01
+type: submission
+title (includes): ["found dead", "body found", "confirmed dead", "remains found", "Body of", "found strangled", "found deceased"]
+set_flair:
+  template_id: e95f4f14-935d-11e3-949c-12313d00c1a4
+message_subject: "We've automatically set a post flair on your {{kind}}"
+message: |
+  Hi /u/{{author}}, this is a courtesy message to let you know that we have automatically added the "Found deceased" post flair to your [{{kind}}]({{permalink}}).
+
+  This was done because ``{{match}}`` was found in the title of your {{kind}}.
+
+  _No action is needed on your part._
+
+  *****
+
+  **Was this done incorrectly?**
+
+  If this was/is incorrect, and the missing person has not been found deceased, then please let the community moderators know [**by clicking/tapping here**](https://www.reddit.com/message/compose/?to=/r/{{subreddit}}&subject=Found deceased flair set incorrectly&message=Post: {{permalink}}%0A%0ATitle: {{title}}%0A%0AMatch: {{match}}). Just click that link then hit send.
+
+  *****
+
+  *^(Your {{kind}} can be found here: {{permalink}})*
+moderators_exempt: false
+---
