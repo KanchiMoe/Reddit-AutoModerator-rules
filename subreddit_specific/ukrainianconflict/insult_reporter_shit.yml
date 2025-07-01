@@ -1,9 +1,9 @@
 ---
 # 'shit' insult detection - reporting possible insults containing "shit" and other variations
 # src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/refs/heads/master/subreddit_specific/ukrainianconflict/insult_reporter_shit.yml
-# Last updated: 2025-05-08
+# Last updated: 2025-06-07
 type: comment
-title+body: ["shit", piece of shit, shitface]
+title+body: ["piece of shit", "shitface"]
 ~title+body: [
   # Countries
   "Russian piece of shit",
