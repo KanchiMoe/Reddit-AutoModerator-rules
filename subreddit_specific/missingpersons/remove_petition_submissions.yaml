@@ -8,13 +8,15 @@ action: remove
 comment: |
   Hi /u/{{author}}, thanks for your {{kind}} to /r/{{subreddit}}. Sadly, it has been removed for the following reason(s):
 
-  > **Link to petition site.**
+  > ### Link to petition site.
 
   > /r/{{subreddit}} requires that all submissions are able to verify that the person is genuinely missing, and only allows links to police, news or recognised charities websites.
 
   > Petition websites do not verify if the person listed is genuinely missing, and as such, are not allowed.
 
-  > Furthermore, We don't feel that /r/{{subreddit}} is not an appropriate subreddit for petition canvassing. You may want to try in a subreddit for your local area or country instead.
+  > **If you have a news article, or a press release from the police/law enforcement, please use that instead.**
+
+  > Furthermore, we feel that /r/{{subreddit}} is not an appropriate subreddit for petition canvassing. You may want to try in a subreddit for your local area or country instead.
 
   *****
 comment_locked: true
