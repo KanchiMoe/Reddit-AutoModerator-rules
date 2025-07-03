@@ -1,0 +1,31 @@
+---
+# Sends users a message if "Aura kill yourself" is said.
+# src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/subreddit_specific/frieren/aura_kys_notification.yaml
+# Last updated: 2025-07-03
+type: comment
+body (includes-word): ["Aura, kill yourself", "Aura kill yourself"]
+message_subject: "Courtesy message about the {{kind}} you made in /r/{{subreddit}}"
+message: |
+  Hi /u/{{author}}, this is a courtesy message about the {{kind}} you made on /r/{{subreddit}}.
+
+  *****
+
+  Your {{kind}} included the phrase "{{match}}".
+
+  We, as the community moderators, recognise that this is a well known, often quoted, phrase from the Frieren anime.
+
+  The reddit administrators, and it's content removal system however, do not know that. Even though we have explained it to them several times.
+
+  Your {{kind}} might get removed in the future by the reddit administrators (or it's AI systems) for "inciting violence".
+
+  Again, we (as the moderators) know that it isn't. We have tried to get the reddit admins to stop doing this, but they have not done so.
+
+  If your {{kind}} does get removed - **we strongly urge you to appeal it's removal** on these grounds.
+
+  *****
+
+  *^(Your {{kind}} can be found here: {{permalink}})*
+
+  *^(Don't reply to this message directly,)* [^(send the community moderators a message instead.)](https://www.reddit.com/message/compose/?to=/r/{{subreddit}})
+moderators_exempt: false
+---

@@ -1,0 +1,28 @@
+---
+# Removed low effort submissions - clickbait titles
+# src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/subreddit_specific/frieren/loweffort_clickbait_title.yaml
+# Last updated: 2025-07-03
+type: submission
+title: ["Unpopular Opinion", "Am I the only one", "hot take", "over hyped", "overrated"]
+action: remove
+comment: |
+  Hi /u/{{author}}, sorry, but [your {{kind}}]({{permalink}}) was removed from /r/{{subreddit}} for the following reason(s):
+
+  > ### Low effort - clickbait title
+
+  > [Under rule 5 and 9](/r/{{subreddit}}/about/rules), the title that you have used:
+
+  > > {{title}}
+
+  > has been considered to be clickbait, which breaks the above mentioned rules on low quality content and titles.
+
+  > Please resubmit your {{kind}} with a less clickbaity title.
+
+  *****
+
+  *^(Don't reply to this message directly,)* [^(send the community moderators a message instead.)](https://www.reddit.com/message/compose/?to=/r/{{subreddit}})
+action_reason: "Low effort (clickbait title). Author: [/u/{{author}}] Match: [{{match}}]"
+comment_stickied: true
+comment_locked: true
+set_locked: true
+---
