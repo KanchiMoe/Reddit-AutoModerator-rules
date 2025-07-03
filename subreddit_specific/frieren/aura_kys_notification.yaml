@@ -4,7 +4,6 @@
 # Last updated: 2025-07-03
 type: comment
 body (includes-word): ["Aura, kill yourself", "Aura kill yourself"]
-moderators_exempt: false
 message_subject: "Courtesy message about the {{kind}} you made in /r/{{subreddit}}"
 message: |
   Hi /u/{{author}}, this is a courtesy message about the {{kind}} you made on /r/{{subreddit}}.
