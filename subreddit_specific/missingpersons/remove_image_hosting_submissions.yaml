@@ -1,0 +1,27 @@
+---
+# Remove submissions to image hosting websites
+# src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/subreddit_specific/missingpersons/remove_image_hosting_submissions.yaml
+# Last updated: 2025-07-11
+type: submission
+standard: image hosting sites
+action: remove
+comment: |
+  Hi /u/{{author}}, thanks for your {{kind}} to /r/{{subreddit}}. Unfortunately, it has been removed for the following reason(s):
+
+  > ### Link to image hosting website.
+
+  > /r/{{subreddit}} requires that all submissions are able to verify that the person is genuinely missing. This is usually done via news websites, police/law enforcement websites or recognised charity websites.
+
+  > The site your {{kind}} links to, {{domain}}, allows users to upload/submit any image without having to verify that the person is genuinely missing.
+  
+  > **If you have a news article, or a press release from the police/law enforcement, please use that instead.**
+
+  > You can post a link to images in the comments.
+
+  *****
+
+  *^(Don't reply to this comment/message directly,)* [^(send the community moderators a message instead.)](https://www.reddit.com/message/compose/?to=/r/{{subreddit}})
+comment_locked: true
+comment_stickied: true
+action_reason: "Submission to image hosting website. Author [/u/{{author}}], domain: [{{match}}]"
+---
