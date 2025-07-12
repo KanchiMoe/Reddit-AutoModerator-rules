@@ -1,0 +1,23 @@
+---
+# Remove submissions to meme generator sites
+# src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/subreddit_specific/missingpersons/remove_meme_generator_site_submissions.yaml
+# Last updated: 2025-07-09
+type: submission
+standard: meme generator sites
+action: remove
+comment: |
+  Hi /u/{{author}}, thanks for your {{kind}} to /r/{{subreddit}}. Sadly, it has been removed for the following reason(s):
+
+  > ### Link to meme generator site.
+
+  > Your {{kind}} linked to a meme generator website. /r/{{subreddit}} is not an appropriate subreddit for this type of content.
+
+  > Please consider posting it to /r/AdviceAnimals, /r/memes or other subreddits instead.
+
+  *****
+
+  *^(Don't reply to this message directly,)* [^(send the community moderators a message instead.)](https://www.reddit.com/message/compose/?to=/r/{{subreddit}})
+comment_locked: true
+comment_stickied: true
+action_reason: "Submission to meme generator site. Author [/u/{{author}}], domain: [{{match}}]"
+---
