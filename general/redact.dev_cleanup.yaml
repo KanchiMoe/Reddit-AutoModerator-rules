@@ -1,22 +1,26 @@
 ---
 # Removes comments that get edited as part of react.dev. The redaction replaces comments with useless information and spams links.
 # src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/refs/heads/master/general/redact.dev_cleanup.yaml
-# Last updated: 2025-03-30
+# Last updated: 2025-07-12
 type: comment
 is_edited: true
 body (includes-word): ["This post was mass deleted and anonymized with", "anonymized with Redact"]
 action: spam
-message_subject: "The recent edit to your {{kind}} on /r/{{subreddit}}"
+message_subject: "Courtesy message about the {{kind}} you edited in /r/{{subreddit}}"
 message: |
-  Hi /u/{{author}}.
+  Hi /u/{{author}}, this is a courtesy message about the {{kind}} you have edited on /r/{{subreddit}}.
+
+  *****
 
   We noticed that you recently edited a {{kind}} on /r/{{subreddit}} using redact.dev.
 
   We respect your right for privacy, but we ask that if you're going be erasing your reddit history, that you just delete it instead.
 
-  The {{kind}}: {{permalink}}
-
   *****
+
+  *^(Your {{kind}} can be found here: {{permalink}})*
+
+  *^(Don't reply to this message directly,)* [^(send the community moderators a message instead.)](https://www.reddit.com/message/compose/?to=/r/{{subreddit}})
 comment: |
   The above comment was removed, as the user replaced it with random, useless gibberish after it had been posted.
 

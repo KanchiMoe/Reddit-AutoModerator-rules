@@ -1,7 +1,7 @@
 ---
 # 'shit' insult detection - reporting possible insults containing "shit" and other variations
 # src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/refs/heads/master/subreddit_specific/ukrainianconflict/insult_reporter_shit.yml
-# Last updated: 2025-06-07
+# Last updated: 2025-07-15
 type: comment
 title+body: ["piece of shit", "shitface"]
 ~title+body: [
@@ -17,6 +17,7 @@ title+body: ["piece of shit", "shitface"]
   # People - other politicians
   "Erdogan is a piece of shit", "Schroeder - a huge piece of shit", "George Bush is a piece of shit", "McCarthy is such a piece of shit", "Piece of shit Mike Johnson",
   # People - others
+  "piece of shit Jeffery Epstein",
   # Misc
   "piece of shit propaganda",
 ]
