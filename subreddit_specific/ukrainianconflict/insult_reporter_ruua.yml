@@ -14,7 +14,7 @@ body: [
   "troll", "shill", "junta",
   # group_d
   "maggot", "goblin"
-  ]
+]
 ~body: []
 action: report
 report_reason: "Possible RU/US specific insult. Match [{{match}}]"
