@@ -1,19 +1,25 @@
 ---
 # Removes suggestions for Netflix
-# src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/subreddit_specific/netflix/suggestions.yaml
-# Last updated: 2025-04-12
-title: ['hey netflix', 'netflix suggestion', 'suggestion', 'suggestion for netflix', 'Netflix should', DAE, 'wish Netflix', 'Netflix would', 'you please', 'netflix please']
+# src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/subreddit_specific/netflix/remove_suggestions.yaml
+# Last updated: 2025-07-31
+type: submission
+title+body: ['hey netflix', 'netflix suggestion', 'suggestion', 'suggestion for netflix', 'Netflix should', DAE, 'wish Netflix', 'Netflix would', 'you please', 'netflix please']
 action: remove
 comment: |
-  Hi /u/{{author}}. Thanks for your post to /r/{{subreddit}}. Sadly, it has been removed for the following reason(s):
+  Sorry /u/{{author}}, but your {{kind}} has been removed for the follow reason(s):
 
-  > **Suggestion for Netflix.** - [rule 9](/r/{{subreddit}}/about/rules).
+  > ### Suggestion/Question for Netflix
 
-  > Suggestions for Netflix should be directed to [Netflix's customer services team](https://help.netflix.com/en/contactus). Sending them there is the best way to get them addressed.
+  > This subreddit, /r/Netflix, is not owned or moderated by Netflix or any of their employees.
 
-  > The same suggestions get submitted on a weekly basis, among other reasons. Please _do not_ resubmit the post with a different title. It will be removed and your account may be banned.
+  > Suggestions/Questions should be directed to [Netflix's customer service team](https://help.netflix.com/en/contactus) on the link below. This is the best way to get them addressed, because they will not be seen by anyone that is in a position to do anything here.
+
+  > Customer services: https://help.netflix.com/en/contactus
 
   *****
 
+  *^(Don't reply to this comment directly,)* [*^(send the community moderators a message instead.)*](https://www.reddit.com/message/compose/?to=/r/{{subreddit}}) [*^(r/Netflix)*](https://www.reddit.com/r/{{subreddit}}) *^(is not owned or moderated by Netflix or any of their employees.)*
 action_reason: "Netflix suggestion. Author: [/u/{{author}}] Match: [{{match}}]"
+comment_stickied: true
+comment_locked: true
 ---
