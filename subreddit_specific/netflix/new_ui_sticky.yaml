@@ -1,0 +1,27 @@
+---
+# Adds a sticky if a post mentions the new UI
+# src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/refs/heads/master/subreddit_specific/netflix/new_ui_sticky.yaml
+# Last updated: 2025-07-30
+type: submission
+title+body: ["new ui", "recent redesign", "new userface"]
+action: remove
+action_reason: "New UI {{kind}}"
+comment: |
+  Sorry /u/{{author}}, but your {{kind}} has been removed for the follow reason(s):
+
+  > ### New UI post
+
+  > You should use this megathread to comment and discuss
+
+  > https://www.reddit.com/r/netflix/comments/1mcqw77/megathread_the_new_ui_update/
+
+  > Further, if you haven't already, you should send any feedback about the UI directly to Netflix directly via
+
+  > > https://help.netflix.com/en/contactus
+
+  *****
+
+  *^(Don't reply to this comment directly,)* [*^(send the community moderators a message instead.)*](https://www.reddit.com/message/compose/?to=/r/{{subreddit}}) [*^(r/Netflix)*](https://www.reddit.com/r/{{subreddit}}) *^(is not owned or moderated by Netflix or any of their employees.)*
+comment_stickied: true
+comment_locked: true
+---
