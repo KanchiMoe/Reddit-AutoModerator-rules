@@ -1,0 +1,21 @@
+---
+# russian/ukraine specific insult detection
+# src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/refs/heads/master/subreddit_specific/ukrainianconflict/insult_reporter_ruua.yml
+# Last updated: 2025-07-31
+type: comment
+body: [
+  # Bots
+  "putinbot", "ruskie", "kremlin bot", "russian bot", "botnik",
+  # group_a
+  "banderivets", "banderovets", "bandera", "banderlog", "benderovets", "banderite", "banderovtsy",
+  # group_b
+  "huilo", "ukie", "ukrop", "pidorashka",
+  # group_c
+  "troll", "shill", "junta",
+  # group_d
+  "maggot", "goblin"
+  ]
+~body: []
+action: report
+report_reason: "Possible RU/US specific insult. Match [{{match}}]"
+---
