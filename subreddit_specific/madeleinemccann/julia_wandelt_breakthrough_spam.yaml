@@ -7,7 +7,7 @@ title+body+domain (regex): [
     "\U0001D63E\U0001D664\U0001D66A\U0001D667\U0001D669",
     "https://jornalggn.com.br/justica/",
     "https://bv.fapesp.br/pt/pesquisador/72834/kelly-nunes/"
-    ]
+]
 modmail_subject: "[notification] Julia Wandelt Breakthrough spam"
 modmail: |
   The user, /u/{{author}}, might be posting the Julia Wandelt Breakthrough spam. Context/background: https://redd.it/1mdmuvs
