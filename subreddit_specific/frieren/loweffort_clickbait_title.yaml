@@ -6,13 +6,13 @@ type: submission
 title: ["Unpopular Opinion", "Am I the only one", "hot take", "over hyped", "overrated"]
 action: remove
 comment: |
-  Hi /u/{{author}}, sorry, but [your {{kind}}]({{permalink}}) was removed from /r/{{subreddit}} for the following reason(s):
+  Sorry /u/{{author}}, but [your {{kind}}]({{permalink}}) was removed from /r/{{subreddit}} for the following reason(s):
 
   > ### Low effort - clickbait title
 
   > [Under rule 5 and 9](/r/{{subreddit}}/about/rules), the title that you have used:
 
-  > > {{title}}
+  > > {{match}}
 
   > has been considered to be clickbait, which breaks the above mentioned rules on low quality content and titles.
 
@@ -24,5 +24,4 @@ comment: |
 action_reason: "Low effort (clickbait title). Author: [/u/{{author}}] Match: [{{match}}]"
 comment_stickied: true
 comment_locked: true
-set_locked: true
 ---
