@@ -3,7 +3,7 @@
 # src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/refs/heads/master/subreddit_specific/netflix/new_ui_sticky.yaml
 # Last updated: 2025-08-01
 type: submission
-title+body: ["new ui", "recent redesign", "new userface", "new design", "new interface", "apps interface", "user interface"]
+title+body: ["new ui", "recent redesign", "new userface", "new design", "new interface", "apps interface", "user interface", "app update"]
 action: remove
 action_reason: "New UI {{kind}}"
 comment: |
