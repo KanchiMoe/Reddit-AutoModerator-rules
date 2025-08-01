@@ -1,7 +1,7 @@
 ---
 # Removed low effort submissions - clickbait titles
 # src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/subreddit_specific/frieren/loweffort_clickbait_title.yaml
-# Last updated: 2025-07-03
+# Last updated: 2025-08-01
 type: submission
 title: ["Unpopular Opinion", "Am I the only one", "hot take", "over hyped", "overrated"]
 action: remove
