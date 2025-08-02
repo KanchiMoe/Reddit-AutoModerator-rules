@@ -3,16 +3,15 @@
 # src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/subreddit_specific/netflix/net_neutrality.yaml
 # Last updated: 2025-08-02
 type: submission
-title: ["neutrality"] 
+title: ["neutrality"]
 action: remove
-action_reason: "Net Neutrality. Author: [/u/{{author}}] Match: [{{match}}]"
 comment: |
   Sorry /u/{{author}}, but [your {{kind}}]({{permalink}}) was removed from /r/{{subreddit}} for the following reason(s):
 
   > ### Politics - Net Neutrality
 
   > Your {{kind}} appears to be discussing net neutrality.
-  
+
   > Unless there is a _very direct_ connection to Netflix, r/Netflix is not the right place for this topic. If there is, message the moderators on the link below.
 
   Was this incorrect?
