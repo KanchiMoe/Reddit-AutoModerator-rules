@@ -1,0 +1,51 @@
+name: Source line linting
+
+on:
+  pull_request:
+    paths:
+      - 'anti-spam/**/*.yml'
+      - 'anti-spam/**/*.yaml'
+      - 'general/**/*.yml'
+      - 'general/**/*.yaml'
+      - 'subreddit_specific/**/*.yml'
+      - 'subreddit_specific/**/*.yaml'
+
+jobs:
+  check-yaml-srcaaaa:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout PR branch
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Required to fetch base branch properly
+
+      - name: Fetch base branch
+        run: git fetch origin ${{ github.base_ref }}
+
+      - name: Find changed YAML files
+        id: changed_files
+        run: |
+          files=$(git diff --name-only origin/${{ github.base_ref }}...HEAD | grep -E '^(anti-spam|general|subreddit_specific)/.*\.ya?ml$' || true)
+          echo "files=$files" >> "$GITHUB_OUTPUT"
+
+      - name: Validate line 3 of YAML files
+        run: |
+          failed=0
+          for file in ${{ steps.changed_files.outputs.files }}; do
+            if [ ! -f "$file" ]; then
+              echo "⚠️ Skipping missing file: $file"
+              continue
+            fi
+            line3=$(sed -n '3p' "$file")
+            if [[ ! "$line3" =~ ^#\ src:\ https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/.*$ ]]; then
+              echo "❌ $file: Invalid or missing 'src' comment on line 3"
+              failed=1
+            else
+              echo "✅ $file: Valid 'src' comment found"
+            fi
+          done
+
+          if [ $failed -ne 0 ]; then
+            echo "❗ One or more YAML files failed validation."
+            exit 1
+          fi
