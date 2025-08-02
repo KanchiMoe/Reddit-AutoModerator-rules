@@ -1,23 +1,25 @@
 ---
 # Adds a sticky if a post mentions the new UI
 # src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/refs/heads/master/subreddit_specific/netflix/new_ui_sticky.yaml
-# Last updated: 2025-07-30
+# Last updated: 2025-08-01
 type: submission
-title+body: ["new ui", "recent redesign", "new userface"]
+title+body: ["new ui", "recent redesign", "new userface", "new design", "new interface", "apps interface", "user interface", "app update"]
 action: remove
 action_reason: "New UI {{kind}}"
 comment: |
-  Sorry /u/{{author}}, but your {{kind}} has been removed for the follow reason(s):
+  Sorry /u/{{author}}, but [your {{kind}}]({{permalink}}) was removed from /r/{{subreddit}} for the following reason(s):
 
   > ### New UI post
 
   > You should use this megathread to comment and discuss
 
-  > https://www.reddit.com/r/netflix/comments/1mcqw77/megathread_the_new_ui_update/
+  > **[/r/netflix/comments/1mcqw77/megathread_the_new_ui_update/](https://redd.it/1mcqw77)**
 
-  > Further, if you haven't already, you should send any feedback about the UI directly to Netflix directly via
+  > Additionally, If you haven't already, you really should send any feedback about the UI directly to Netflix directly [via their customer service team](https://help.netflix.com/en/contactus) on the link below. The team [does (apparently) pay attention](https://www.reddit.com/r/netflix/comments/3pudfh/_/cwcxs2b/).
 
-  > > https://help.netflix.com/en/contactus
+  > * https://help.netflix.com/en/contactus
+
+  > This subreddit, /r/Netflix, is not owned or moderated by Netflix or any of their employees, so comments on the UI will not be seen by anyone in a position to do anything here.
 
   *****
 
