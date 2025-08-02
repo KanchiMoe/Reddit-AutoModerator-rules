@@ -1,0 +1,28 @@
+---
+# Remove net neutrality
+# src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/subreddit_specific/netflix/net_neutrality.yaml
+# Last updated: 2025-08-02
+type: submission
+title: ["neutrality"] 
+action: remove
+action_reason: "Net Neutrality. Author: [/u/{{author}}] Match: [{{match}}]"
+comment: |
+  Sorry /u/{{author}}, but [your {{kind}}]({{permalink}}) was removed from /r/{{subreddit}} for the following reason(s):
+
+  > ### Politics - Net Neutrality
+
+  > Your {{kind}} appears to be discussing net neutrality.
+  
+  > Unless there is a _very direct_ connection to Netflix, r/Netflix is not the right place for this topic. If there is, message the moderators on the link below.
+
+  Was this incorrect?
+
+  * 「[**Message the subreddit moderators**](https://reddit.com/message/compose?to=/r/{{subreddit}}&subject=Net%20Neutrality%20appeal&message=Insert%20additional%20information%20here.%0A%0A---%20Do%20not%20edit%20below%20this%20line%20---%0A%0ALink%3A%20{{permalink}}%0A)」
+
+  *****
+
+  *^(Don't reply to this comment directly,)* [*^(send the community moderators a message instead.)*](https://www.reddit.com/message/compose/?to=/r/{{subreddit}}) [*^(r/Netflix)*](https://www.reddit.com/r/{{subreddit}}) *^(is not owned or moderated by Netflix or any of their employees.)*
+action_reason: "Net Neutrality. Author: [/u/{{author}}] Match: [{{match}}]"
+comment_stickied: true
+comment_locked: true
+---
