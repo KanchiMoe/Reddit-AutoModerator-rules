@@ -20,7 +20,6 @@ police_phone_numbers: [
   "(800) 382-0689",
   "(301) 279-8000",
   "(519) 661-5670",
-  "(253) 931-3080",  # Auburn Police Department
   "973-285-2900",
   "305-715-3300",
   "305-535-4300",
@@ -84,7 +83,6 @@ police_phone_numbers: [
   "615-862-8600",  # Metro Nashville Police Department
   "931-359-4044",  # Lewisburg Police Department
   "662-393-6174",  # Horn Lake Police Department
-  "(931) 648-0656",  # Clarksville Police Department
   "856-215-2443",  # Knox County Sheriff's Office
   "865-215-4010",  # Knoxville Police Department
   "423-639-7111",  # Greeneville Police Department
@@ -94,7 +92,6 @@ police_phone_numbers: [
   "931-388-2727",  # Columbia Police Department
   "901-475-3300",  # Tipton County Sheriff's Office
   "901-543-2720",  # Memphis Police Department
-  "(615) 862-8600",  # Metropolitan Nashville Police Department
   "770-477-3550",  # Clayton County Police Department
   "931-486-3269",  # Spring Hill Police Department
   "423-272-7121",  # Hawkins County Sheriff’s Office
@@ -109,18 +106,14 @@ police_phone_numbers: [
   "204-986-6222",  # Winnipeg police service
   "306-953-4222",  # Prince Albert Police Service
   "403-328-4444",  # Lethbridge Police
-  "(780) 821-7000",  # RCMP
-  "(250) 995-7654",  # VicPD Report Desk
   "403-251-9660",  # Tsuu’tina Nation Police Service
   "780-594-3302",  # Cold Lake RCMP
-  "(323) 890-5500",  # Los Angeles County Sheriff's Department's Missing Persons Unit
   "902-665-4481",  # Annapolis District RCMP
   "506-789-6000",  # Campbellton RCMP
   "800 659-4264",  # Sûreté du Québec's Criminal Information Centre
   "416-808-5200",  # Toronto police
   "709-643-2118",  # RCMP
   "450 463-7011",  # Longueuil Police Service
-  "(604) 945-1580",  # Coquitlam RCMP Media Relations Office
   "419-255-1111",  # toledo police, crimestoppers
   "865-868-1748",  # Sevierville Police Department
   "864-641-9555",  # Spartanburg County Sheriff's Office
@@ -132,7 +125,6 @@ police_phone_numbers: [
   "979-279-5333",  # Hearne Police Department
   "800-843-5678",  # NCMEC
   "318-377-1515",  # Webster Parish Sheriff’s Office
-  "(612) 861-9800",  # Richfield police department
   "212-694-7782",  # New York City Police Missing Persons Unit
   "705-324-5252",  # KLPS
   "406-395-4513",  # Rocky Boy Police Department
@@ -167,6 +159,14 @@ police_phone_numbers: [
   "(401) 647-8039",  # Rhode Island State Police
   "(703) 777-1021",  # Loudoun County Sheriff’s Office.
   "(808) 955-8300",  # CrimeStoppers Honolulu
+  "(612) 861-9800",  # Richfield police department
+  "(780) 821-7000",  # RCMP
+  "(250) 995-7654",  # VicPD Report Desk
+  "(253) 931-3080",  # Auburn Police Department
+  "(323) 890-5500",  # Los Angeles County Sheriff's Department's Missing Persons Unit
+  "(604) 945-1580",  # Coquitlam RCMP Media Relations Office
+  "(615) 862-8600",  # Metropolitan Nashville Police Department
+  "(931) 648-0656",  # Clarksville Police Department
   "1-866-371-8477",  # St. Louis Major Case Squad
   "1-217-854-3135",  # Macoupin County Sheriff's Department
   "1-833-560-2065",  # Indian affairs, Missing persons unit, US Dept of the Interior
