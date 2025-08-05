@@ -1,0 +1,29 @@
+---
+# Remove petition submissions
+# src: foobar
+# Last updated: 2025-08-05
+type: submission
+domain+body: [act.rootsaction.org, actblue.com, action.sumofus.org, activism.thenation.com, avaaz.org, change.org, chn.ge, chng.it, credomobilize.com, demandprogress.org, easypolls.net, go.berniesanders.com, gopetition.com, leftaction.com, moveon.org, petitions.whitehouse.gov, signon.org, startjoin.com, strawpoll.me, takepart.com, thepetitionsite.com, watchdog.net]
+action: remove
+action_reason: "Petition submission. Author [/u/{{author}}], domain: [{{match}}]"
+comment: |
+  Sorry /u/{{author}}, but your {{kind}} has been removed for the follow reason(s):
+
+  > ### Petitioning Netflix
+
+  > This subreddit, /r/Netflix, is not owned or moderated by Netflix or any of their employees.
+
+  > You should get in touch with [Netflix's customer service team](https://help.netflix.com/en/contactus) to make sure that your dissatisfaction is correctly logged with them. This is the best way to get them addressed, because they will not be seen by anyone that is in a position to do anything here, or via a petition site. The team [does (apparently) pay attention](https://www.reddit.com/r/netflix/comments/3pudfh/_/cwcxs2b/) to these complaints.
+
+  > Customer services: https://help.netflix.com/en/contactus
+
+  Was this incorrect?
+
+  * 「[**Message the subreddit moderators**](https://reddit.com/message/compose?to=/r/{{subreddit}}&subject=Petition%20site%20appeal&message=Insert%20additional%20information%20here.%0A%0A---%20Do%20not%20edit%20below%20this%20line%20---%0A%0ALink%3A%20{{permalink}}%0A)」
+
+  *****
+
+  *^(Don't reply to this comment directly,)* [*^(send the community moderators a message instead.)*](https://www.reddit.com/message/compose/?to=/r/{{subreddit}}) [*^(r/Netflix)*](https://www.reddit.com/r/{{subreddit}}) *^(is not owned or moderated by Netflix or any of their employees.)*
+comment_locked: true
+comment_stickied: true
+---
