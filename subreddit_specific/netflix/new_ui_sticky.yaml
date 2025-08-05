@@ -5,7 +5,7 @@
 type: submission
 title+body: ["new ui", "recent redesign", "new userface", "new design", "new interface", "apps interface", "user interface", "app update"]
 action: remove
-action_reason: "New UI {{kind}}"
+action_reason: "New UI {{kind}}. Match: [{{match}}]"
 comment: |
   Sorry /u/{{author}}, but [your {{kind}}]({{permalink}}) was removed from /r/{{subreddit}} for the following reason(s):
 
