@@ -1,12 +1,21 @@
 ---
-# Filter on 5 reports without mod intervention.
-reports: 5
+# Filter on 3 reports without mod intervention.
+# src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/general/filter_highly_reported.yaml
+# Last updated: 2025-08-05
+reports: 3
 action: filter
-action_reason: "Removed a {{kind}} that recieved 5+ reports for review"
-modmail_subject: "Filtered a heavily reported {{kind}}"
+modmail_subject: "[notification] Filtered a heavily reported {{kind}}"
 modmail: |
+  The following {{kind}} was filtered after getting 5+ reports.
 
-    **Type** {{kind}} - **Author** /u/{{author}} - **Link** {{permalink}}
+  Author: /u/{{author}} - Link: {{permalink}}
 
-    Please verify that this action was correct.
+  *****
+
+  {{body}}
+
+  *****
+
+  _Please leave a private mod note before archiving to let other mods know if any action has been taken on this_.
+action_reason: "Removed a {{kind}} that recieved 5+ reports for review"
 ---
