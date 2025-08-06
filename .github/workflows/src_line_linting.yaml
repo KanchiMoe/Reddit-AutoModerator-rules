@@ -26,12 +26,17 @@ jobs:
         id: changed_files
         run: |
           files=$(git diff --name-only origin/${{ github.base_ref }}...HEAD | grep -E '^(anti-spam|general|subreddit_specific)/.*\.ya?ml$' || true)
-          echo "files=$files" >> "$GITHUB_OUTPUT"
+          echo "files<<EOF" >> "$GITHUB_OUTPUT"
+          echo "$files" >> "$GITHUB_OUTPUT"
+          echo "EOF" >> "$GITHUB_OUTPUT"
 
       - name: Validate line 3 of YAML files
         run: |
           failed=0
-          for file in ${{ steps.changed_files.outputs.files }}; do
+          while IFS= read -r file; do
+            if [ -z "$file" ]; then
+              continue
+            fi
             if [ ! -f "$file" ]; then
               echo "⚠️ Skipping missing file: $file"
               continue
@@ -43,7 +48,7 @@ jobs:
             else
               echo "✅ $file: Valid 'src' comment found"
             fi
-          done
+          done <<< "${{ steps.changed_files.outputs.files }}"
 
           if [ $failed -ne 0 ]; then
             echo "❗ One or more YAML files failed validation."

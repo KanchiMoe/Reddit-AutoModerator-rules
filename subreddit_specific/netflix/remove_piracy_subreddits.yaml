@@ -1,6 +1,6 @@
 ---
 # Removes links to piracy subreddits
-# src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/refs/heads/master/subreddit_specific/netflix/remove_piracy_subreddits.yaml
+# src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/subreddit_specific/netflix/remove_piracy_subreddits.yaml
 # Last updated: 2025-07-29
 domain+url+body: [r/premium_giftcard, r/netflixhacks]
 action: remove

@@ -1,6 +1,6 @@
 ---
 # Removes comments that are selling netflix accounts
-# src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/refs/heads/master/subreddit_specific/netflix/remove_selling_accounts.yaml
+# src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/subreddit_specific/netflix/remove_selling_accounts.yaml
 # Last updated: 2025-07-29
 type: comment
 body: ["sell netflix", "Netflix 4 k premium account", "selllling", "24 hour service", "lifetime warranty", "linkks"]
