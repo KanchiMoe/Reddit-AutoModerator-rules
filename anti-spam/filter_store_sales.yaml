@@ -1,0 +1,9 @@
+---
+# Filter possible sales
+# src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/anti-spam/filter_store_sales.yaml
+# Last updated: 2025-08-06
+type: any
+title+body (regex): ["etsy", "my store", "my website", "patreon", "paypal", "instagram", "insta", "donate", "venmo", "buymeacoffee", "(?i)ko ?-?fi", "(?i)link ?_?tr", "(?i)cash ?_?app", "(?i)wish ?_?list", "(?i)store ?_?front"]
+action: remove
+action_reason: "Remove likely sales/store. Author: [/u/{{author}}], match: [{{match}}]"
+---
