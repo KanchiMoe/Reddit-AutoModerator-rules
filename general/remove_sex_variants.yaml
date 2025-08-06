@@ -1,0 +1,9 @@
+---
+# Filter possible sales
+# src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/general/remove_sex_variants.yaml
+# Last updated: 2025-08-06
+type: any
+title+body (regex): ["s+[*e3]+x+", "s.x+i(e(r|st)|ly)", "s.x+t(ing|e(d|rs?))?s?", "s.x+e[sd]?", "s[e3*]gg?[sz]y?", "s.x+ual(it(y|ies)|l?y)?"]
+action: remove
+action_reason: "Sex variants (sex/sexy). Author: [/u/{{author}}], match: [{{match}}]"
+---
