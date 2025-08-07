@@ -1,0 +1,9 @@
+---
+# Remove solicitation terms
+# src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/general/remove_solicitation.yaml
+# Last updated: 2025-08-07
+type: any
+title+body (regex): ['(?i)\b(sen[dt])\s+(me|u|you)\s+(a\s+)?(chat|dm)\b', '\b(message|msg|d\.?m|hit\s+me\s+up)\b']
+action: remove
+action_reason: "Solicitation. Author: [/u/{{author}}], match: [{{match}}]"
+---

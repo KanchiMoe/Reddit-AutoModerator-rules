@@ -1,0 +1,32 @@
+---
+# Remove numerical looks ratings (10/10, 1/10, etc)
+# src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/general/remove_numerical_looks_ratings.yaml
+# Last updated: 2025-08-07
+type: comment
+title+body (regex): [
+    "0/10", "1/10", "2/10", "3/10", "4/10", "5/10",
+    "6/10", "7/10", "8/10", "9/10", "10/10", "100",
+    "\U0001F4AF",  # 100 emoji
+]
+action: remove
+message: |
+  _This is a message about your recent {{kind}} on /r/{{subreddit}}._
+
+  *****
+
+  Sorry /u/{{author}}, but your {{kind}} was removed for the following reason(s):
+
+  > ### Numerical rating {{kind}}
+
+  > r/{{subreddit}} is not a "rate my look" type of community.
+
+  > Please use words, not numbers, to describe the fit.
+
+  *****
+
+  *^(Your {{kind}} can be found here: {{permalink}})*
+
+  ^(_Replies to this message **will not** be send to the moderators. Send a_) [^(_message via this link instead._)](https://www.reddit.com/message/compose/?to=/r/{{subreddit}})
+message_subject: "Your recent {{kind}} on /r/{{subreddit}}"
+action_reason: "Numerical looks rating. Author: [/u/{{author}}], match: [{{match}}]"
+---
