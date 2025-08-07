@@ -1,5 +1,5 @@
 ---
-# Filter possible sales
+# Remove "sex" variants (sex/sexy/etc)
 # src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/general/remove_sex_variants.yaml
 # Last updated: 2025-08-06
 type: any
