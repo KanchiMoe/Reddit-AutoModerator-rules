@@ -4,14 +4,16 @@
 # Last updated: 2025-08-07
 type: any
 title+body (regex): [
-    "d+[i!1*]+c*k+s*",              # "dick", "diicksss", "d!ck", "d1ck", "d*ick", etc.
+    "d+[i!1*]+c*k+s*",              # "dick", "diicksss", "d!ck", "d1ck", "d*ick"
     "c[uv]nt",                      # "cunt", "cvnt"
     "(c[o0*]c*k)(?!tail)(?! tail)", # "cock", "c0ck", "c*ck" but not "cocktail" or "cock tail"
     "n[1!]p",                       # "nip", "n!p", "n1p"
     "b[e3]wb",                      # "bewb", "b3wb"
     "t[i1!]dd",                     # "tidd", "t1dd", "t!dd" (for tiddy)
     "t[1!]t",                       # "tit", "t1t", "t!t"
-    "@[s$][s$]",                    # "@ss", "@$$", "@s$", etc.
+    "t[1!]tt[i1!]e?s*",             # "titty", "titties", "t1tt1es"
+    "@[s$][s$]",                    # "@ss", "@$$", "@s$"
+    "p[uü*][s$5]{2,}y+",            # "pussy", "pu55y", "pu$$y", "püssy", "pu*ssy"
 ]
 action: remove
 action_reason: "Sexual body part. Author: [/u/{{author}}], match: [{{match}}]"
