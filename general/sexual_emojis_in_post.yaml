@@ -4,9 +4,9 @@
 # Last updated: 2025-08-07
 type: submission
 title+body (regex): [
-    "\U0001F975", # hot face
-    "\U0001F629", # weary face
-    "\U0001F48B", # kissing lips
+    "\U0001F975",  # hot face
+    "\U0001F629",  # weary face
+    "\U0001F48B",  # kissing lips
 ]
 action: remove
 action_reason: "Sexual emoji in post. Author: [/u/{{author}}], match: [{{match}}]"
