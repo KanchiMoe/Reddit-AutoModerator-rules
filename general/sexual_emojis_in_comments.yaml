@@ -1,0 +1,19 @@
+---
+# Remove sexual type emojis in comments
+# src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/general/sexual_emojis_in_comment.yaml
+# Last updated: 2025-08-07
+type: comment
+title+body (regex): [
+    "\U0001F351", # peach
+    "\U0001F33D", # corn
+    "\U0001F34C", # banana
+    "\U0001F346", # egg plant
+    "\U0001F952", # cucumber
+    "\U0001F975", # hot face
+    "\U0001F924", # drooling face
+    "\U0001F60D", # heart eyes
+    "\U0001F4A6", # water drops
+]
+action: remove
+action_reason: "Sexual emoji in comment. Author: [/u/{{author}}], match: [{{match}}]"
+---
