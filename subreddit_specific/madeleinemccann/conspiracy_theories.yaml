@@ -1,0 +1,24 @@
+---
+# Conspiracy theories that have no logical backing
+# src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/subreddit_specific/madeleinemccann/conspiracy_theories.yaml
+# Last updated: 2025-08-08
+type: any
+title+body+domain (regex): ["podesta", "keep the truth covered up"]
+modmail_subject: "[notification] Conspiracy theory {{kind}}"
+modmail: |
+  The user, /u/{{author}}, might be posting about a whacked conspiracy theory.
+
+  *****
+
+  {{body}}
+
+  ****
+
+  Specific match: {{match}}
+
+  ****
+
+  _Please leave a private mod note before archiving to let other mods know if any action has been taken on this_.
+action: remove
+action_reason: "Conspiracy theory. Author: [/u/{{author}}] Match: [{{match}}]"
+---

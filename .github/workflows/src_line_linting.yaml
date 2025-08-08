@@ -1,6 +1,6 @@
 name: Source line linting
 
-on:
+on: # yamllint disable-line rule:truthy
   pull_request:
     paths:
       - 'anti-spam/**/*.yml'
@@ -30,7 +30,7 @@ jobs:
           echo "$files" >> "$GITHUB_OUTPUT"
           echo "EOF" >> "$GITHUB_OUTPUT"
 
-      - name: Validate line 3 of YAML files
+      - name: Src github link validation (line 3)
         run: |
           failed=0
           while IFS= read -r file; do
@@ -46,11 +46,43 @@ jobs:
               echo "❌ $file: Invalid or missing 'src' comment on line 3"
               failed=1
             else
-              echo "✅ $file: Valid 'src' comment found"
+              echo "✅ $file: Valid 'src' link"
             fi
           done <<< "${{ steps.changed_files.outputs.files }}"
 
           if [ $failed -ne 0 ]; then
             echo "❗ One or more YAML files failed validation."
+            exit 1
+          fi
+
+      - name: Src line matches actual path (line 3)
+        run: |
+          failed=0
+          repo_url_prefix="https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/"
+          while IFS= read -r file; do
+            if [ -z "$file" ]; then
+              continue
+            fi
+            if [ ! -f "$file" ]; then
+              echo "⚠️ Skipping missing file: $file"
+              continue
+            fi
+
+            line3=$(sed -n '3p' "$file")
+            expected_src="# src: ${repo_url_prefix}${file}"
+
+            if [[ "$line3" != "$expected_src" ]]; then
+              echo "❌ $file: Expected line 3 to be:"
+              echo "   $expected_src"
+              echo "   But found:"
+              echo "   $line3"
+              failed=1
+            else
+              echo "✅ $file: Path matches src line"
+            fi
+          done <<< "${{ steps.changed_files.outputs.files }}"
+
+          if [ $failed -ne 0 ]; then
+            echo "❗ One or more YAML files failed src validation."
             exit 1
           fi

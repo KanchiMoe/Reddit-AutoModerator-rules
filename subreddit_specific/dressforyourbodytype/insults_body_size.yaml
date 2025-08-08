@@ -1,0 +1,9 @@
+---
+# Remove body size insults
+# src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/subreddit_specific/dressforyourbodytype/insults_body_size.yaml
+# Last updated: 2025-08-07
+type: comment
+title+body: ["anorexic", "bulimic", "anorexia", "bulimia", "eat something", "malnutrition", "malnutritioned", "go to the gym", "eat less", "work out more", "workout more", "fat", "fatty"]
+action: remove
+action_reason: "Body size insults. Author: [/u/{{author}}], match: [{{match}}]"
+---

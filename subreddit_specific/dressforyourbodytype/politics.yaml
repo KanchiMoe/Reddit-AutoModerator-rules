@@ -1,0 +1,9 @@
+---
+# Remove political things
+# src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/subreddit_specific/dressforyourbodytype/politics.yaml
+# Last updated: 2025-08-07
+type: comment
+title+body: ["biden", "trump", "kamala"]
+action: remove
+action_reason: "Politics. Author: [/u/{{author}}], match: [{{match}}]"
+---
