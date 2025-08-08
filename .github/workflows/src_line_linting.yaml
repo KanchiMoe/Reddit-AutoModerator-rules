@@ -46,7 +46,7 @@ jobs:
               echo "❌ $file: Invalid or missing 'src' comment on line 3"
               failed=1
             else
-              echo "✅ $file: Valid 'src' comment found"
+              echo "✅ $file: Valid 'src' link"
             fi
           done <<< "${{ steps.changed_files.outputs.files }}"
 
@@ -55,7 +55,7 @@ jobs:
             exit 1
           fi
 
-      - name: Src line matches actual path
+      - name: Src line matches actual path (line 3)
         run: |
           failed=0
           repo_url_prefix="https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/"
@@ -78,7 +78,7 @@ jobs:
               echo "   $line3"
               failed=1
             else
-              echo "✅ $file: Correct 'src' on line 3"
+              echo "✅ $file: Path matches src line"
             fi
           done <<< "${{ steps.changed_files.outputs.files }}"
 
