@@ -54,3 +54,35 @@ jobs:
             echo "❗ One or more YAML files failed validation."
             exit 1
           fi
+
+      - name: Src line matches actual path
+        run: |
+          failed=0
+          repo_url_prefix="https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/"
+          while IFS= read -r file; do
+            if [ -z "$file" ]; then
+              continue
+            fi
+            if [ ! -f "$file" ]; then
+              echo "⚠️ Skipping missing file: $file"
+              continue
+            fi
+
+            line3=$(sed -n '3p' "$file")
+            expected_src="# src: ${repo_url_prefix}${file}"
+
+            if [[ "$line3" != "$expected_src" ]]; then
+              echo "❌ $file: Expected line 3 to be:"
+              echo "   $expected_src"
+              echo "   But found:"
+              echo "   $line3"
+              failed=1
+            else
+              echo "✅ $file: Correct 'src' on line 3"
+            fi
+          done <<< "${{ steps.changed_files.outputs.files }}"
+
+          if [ $failed -ne 0 ]; then
+            echo "❗ One or more YAML files failed src validation."
+            exit 1
+          fi
