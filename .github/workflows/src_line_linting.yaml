@@ -30,7 +30,7 @@ jobs:
           echo "$files" >> "$GITHUB_OUTPUT"
           echo "EOF" >> "$GITHUB_OUTPUT"
 
-      - name: Validate line 3 of YAML files
+      - name: Src github link validation (line 3)
         run: |
           failed=0
           while IFS= read -r file; do
