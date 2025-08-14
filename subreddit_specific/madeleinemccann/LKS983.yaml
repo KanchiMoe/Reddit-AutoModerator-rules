@@ -1,6 +1,6 @@
 ---
 # LKS983 sole 'media conference' arguments
-# src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/subreddit_specific/madeleinemccann/LKS983.ymal
+# src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/subreddit_specific/madeleinemccann/LKS983.yaml
 # Last updated: 2025-08-14
 type: comment
 body: ["media conference", "press conference", "states on TV", "they still haven't charged him"]
