@@ -1,7 +1,7 @@
 ---
 # 'asshole' insult detection - reporting possible insults containing "asshole" and other variations
-# src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/refs/heads/master/subreddit_specific/ukrainianconflict/insult_reporter_asshole.yml
-# Last updated: 2025-05-08
+# src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/refs/heads/master/subreddit_specific/ukrainianconflict/insult_reporter_asshole.ymal
+# Last updated: 2025-08-14
 type: comment
 title+body: [asshole, asshat]
 ~title+body: [

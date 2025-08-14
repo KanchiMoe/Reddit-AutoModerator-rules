@@ -1,6 +1,6 @@
 ---
 # russian/ukraine specific insult detection
-# src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/refs/heads/master/subreddit_specific/ukrainianconflict/insult_reporter_ruua.yml
+# src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/refs/heads/master/subreddit_specific/ukrainianconflict/insult_reporter_ruua.ymal
 # Last updated: 2025-07-31
 type: comment
 body: [
