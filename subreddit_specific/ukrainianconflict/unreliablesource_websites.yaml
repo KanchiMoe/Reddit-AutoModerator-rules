@@ -19,7 +19,7 @@ comment: |
   * 「[**Message the subreddit moderators**](https://reddit.com/message/compose?to=/r/{{subreddit}}&subject=%5Bappeal%5D%20Unreliable%20source&message=Insert%20additional%20information%20here.%0A%0A---%20Do%20not%20edit%20below%20this%20line%20---%0A%0ALink%3A%20{{permalink}}%0A%0ADomain%3A%20{{domain}})」
 
   *****
-  
+
   *^(Don't reply to this comment directly,)* [*^(send the community moderators a message instead.)*](https://www.reddit.com/message/compose/?to=/r/{{subreddit}})
 action_reason: "Unreliable source (websites-general). [/u/{{author}}], match: [{{match}}]"
 comment_stickied: true
