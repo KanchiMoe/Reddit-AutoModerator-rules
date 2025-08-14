@@ -19,6 +19,17 @@ jobs:
         with:
           fetch-depth: 0  # Required to fetch base branch properly
 
+      - name: Fail if .yml files exist in monitored paths
+        run: |
+          bad_files=$(find anti-spam general subreddit_specific -type f -name "*.yml")
+          if [ -n "$bad_files" ]; then
+            echo "❌ The following .yml files exist in monitored paths (must be .yaml instead):"
+            echo "$bad_files"
+            exit 1
+          else
+            echo "✅ No .yml files found in monitored paths."
+          fi
+
       - name: Fetch base branch
         run: git fetch origin ${{ github.base_ref }}
 

@@ -1,7 +1,7 @@
 ---
 # 'cunt' insult detection - reporting possible insults containing "cunt" and other variations
-# src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/refs/heads/master/subreddit_specific/ukrainianconflict/insult_reporter_cunt.yml
-# Last updated: 2025-07-23
+# src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/refs/heads/master/subreddit_specific/ukrainianconflict/insult_reporter_cunt.yaml
+# Last updated: 2025-08-14
 type: comment
 title+body: ["cunt"]
 ~title+body: [
