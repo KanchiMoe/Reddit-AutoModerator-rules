@@ -6,7 +6,6 @@ type: any
 title+body (regex): ['(?i)n[\s\W_]*[i1!|l*¡][\s\W_]*[gq69][\s\W_]*[gq69r][\s\W_]*(?:e[\s\W_]*r*)?']
 action: remove
 action_reason: "N-word. Author: [/u/{{author}}], match: [{{match}}]"
-modmail_subject: "[notification] N-word used in a {{kind}} by /u/{{author}}"
 modmail: |
   The user, /u/{{author}}, was detected making a {{kind}} where the n-word, or some variant, was detected in it.
 
