@@ -1,6 +1,6 @@
 ---
 # 'orc' insult detection - removing insults containing "orc" and other variations
-# src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/refs/heads/master/subreddit_specific/ukrainianconflict/insult_reporter_orcs.ymal
+# src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/refs/heads/master/subreddit_specific/ukrainianconflict/insult_reporter_orcs.yaml
 # Last updated: 2025-08-14
 body (regex): ["orc", "orcs", "ork", "orks", "orq", "orqs", "0rc", "0rcs", "0rk", "0rks", "orruk", "orruks", "ogre", "ogres", "ogors", "ogor", "оrc", "оrcs", "оrk", "orks"]
 ~body (includes): ["translation", "translate", "says", "language"]
