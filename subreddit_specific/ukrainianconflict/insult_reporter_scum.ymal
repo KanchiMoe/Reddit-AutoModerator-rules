@@ -1,7 +1,7 @@
 ---
 # 'scum' insult detection - reporting possible insults containing "scum" and other variations
-# src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/refs/heads/master/subreddit_specific/ukrainianconflict/insult_reporter_scum.yml
-# Last updated: 2025-07-15
+# src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/refs/heads/master/subreddit_specific/ukrainianconflict/insult_reporter_scum.ymal
+# Last updated: 2025-08-14
 type: comment
 title+body: ["scum"]
 ~title+body: [

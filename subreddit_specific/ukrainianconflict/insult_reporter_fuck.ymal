@@ -1,7 +1,7 @@
 ---
 # 'fuck' insult detection - reporting possible insults containing "fuck" and other variations
-# src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/refs/heads/master/subreddit_specific/ukrainianconflict/insult_reporter_fuck.yml
-# Last updated: 2025-03-30
+# src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/refs/heads/master/subreddit_specific/ukrainianconflict/insult_reporter_fuck.yaml
+# Last updated: 2025-08-14
 type: any
 body (regex): ["you('re a)? fuck(ing|tard|er|ed|)", "fuck\\s*(you|heads?|wads?|offs?|heads?|faces?)", fucker, fuckhead, fuck head]
 ~title+body: [
