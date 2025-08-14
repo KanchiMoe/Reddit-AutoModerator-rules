@@ -1,9 +1,9 @@
 ---
 # Remove terms mentioning sexual acts
 # src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/general/sexual_acts.yaml
-# Last updated: 2025-08-08
+# Last updated: 2025-08-14
 type: any
-title+body (regex): ["doggystyle", "doggiestyle", "doggy style", "shag", "anal", "tits", "g[a@*]ng.?b[a@*]ng", "yiff?(ed|s|ing)?", "beastiality", "zoophil(e|iac?)s?", "necrophil(e|i?ac?)s?", "sodom(y|ized?s?|ites?)"]
+title+body (regex): ["doggystyle", "doggiestyle", "doggy style", "shag", "anal", "tits", "g[a@*]ng.?b[a@*]ng", "yiff?(ed|s|ing)?", "beastiality", "zoophil(e|iac?)s?", "necrophil(e|i?ac?)s?", "sodom(y|ized?s?|ites?)", "blow.?jobs?", "bjs?", "oral.?sex", "cunnilingus", "6.?9", "six(ty)?.?nine?(d|ing)?",]
 action: remove
 action_reason: "Sexual acts. Author: [/u/{{author}}], match: [{{match}}]"
 ---
