@@ -3,7 +3,7 @@
 # src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/subreddit_specific/ukrainianconflict/unreliablesource_usersubmitted.yaml
 # Last updated: 2025-08-14
 type: submission
-domain+url: [blogspot.com, wordpress.com, medium.com, tiktok.com, tumblr.com, craigslist.org, discordapp.com, discord.com, docs.google.com, substack.com, seymourhersh.substack.com, quora.com]
+domain+url: [blogspot.com, wordpress.com, medium.com, tiktok.com, tumblr.com, craigslist.org, discordapp.com, discord.com, docs.google.com, substack.com, seymourhersh.substack.com, quora.com, instagram.com]
 ~domain+url: [snyder.substack.com, martinkuz.substack.com]
 action: remove
 comment: |
