@@ -13,6 +13,7 @@ title+body (regex): [
     "\U0001F924",  # drooling face
     "\U0001F60D",  # heart eyes
     "\U0001F4A6",  # water drops
+    "\U0001F336",  # pepper
 ]
 action: remove
 action_reason: "Sexual emoji in comment. Author: [/u/{{author}}], match: [{{match}}]"
