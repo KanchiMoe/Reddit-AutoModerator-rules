@@ -1,7 +1,7 @@
 ---
 # Remove terms mentioning body parts
 # src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/general/sexual_body_parts.yaml
-# Last updated: 2025-08-07
+# Last updated: 2025-08-17
 type: any
 title+body (regex): [
     "d+[i!1*]+c*k+s*",               # "dick", "diicksss", "d!ck", "d1ck", "d*ick"
