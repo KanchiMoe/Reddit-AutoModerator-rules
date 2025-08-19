@@ -1,5 +1,7 @@
 ---
 # Sticky on every submission
+# src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/subreddit_specific/ukrainianconflict/every_post_sticky.yaml
+# Last updated: 2025-08-17
 type: submission
 ~domain: [twitter.com]
 comment_stickied: true
