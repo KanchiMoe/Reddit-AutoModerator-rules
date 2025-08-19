@@ -1,6 +1,6 @@
 ---
 # Remove sexual type emojis in comments
-# src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/general/sexual_emojis_in_comment.yaml
+# src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/general/sexual_emojis_in_comments.yaml
 # Last updated: 2025-08-07
 type: comment
 title+body (regex): [
