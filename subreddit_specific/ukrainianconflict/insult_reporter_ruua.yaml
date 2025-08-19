@@ -1,7 +1,7 @@
 ---
 # russian/ukraine specific insult detection
-# src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/refs/heads/master/subreddit_specific/ukrainianconflict/insult_reporter_ruua.yaml
-# Last updated: 2025-07-31
+# src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/subreddit_specific/ukrainianconflict/insult_reporter_ruua.yaml
+# Last updated: 2025-08-15
 type: comment
 body: [
   # Bots
@@ -17,5 +17,5 @@ body: [
 ]
 ~body: []
 action: report
-report_reason: "Possible RU/US specific insult. Match [{{match}}]"
+report_reason: "Possible RU/UA specific insult. Match [{{match}}]"
 ---

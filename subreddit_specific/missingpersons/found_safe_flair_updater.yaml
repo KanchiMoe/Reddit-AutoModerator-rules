@@ -1,5 +1,7 @@
 ---
 # Found safe flair updater
+# src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/subreddit_specific/missingpersons/found_safe_flair_updater.yaml
+# Last updated: 2025-08-19
 type: comment
 author:
   is_submitter: true
