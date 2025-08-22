@@ -1,0 +1,9 @@
+---
+# Links reddit has banned across the site
+# src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/anti-spam/reddit_banned_domains.yaml
+# Last updated: 2025-08-22
+type: any
+body+domain: ["vocal.media", "sites.google.com/view/demowatch", "bc.game", "garryhall.gumroad.com"]
+action: spam
+action_reason: "Domain blocked across reddit. Author: [/u/{{author}}], match: [{{match}}]"
+---
