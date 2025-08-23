@@ -1,0 +1,27 @@
+---
+# Adds a sticky if a post mentions the new UI
+# src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/subreddit_specific/netflix/household_plan.yaml
+# Last updated: 2025-08-19
+type: submission
+title+body: ["household plan", "household account"]
+action: remove
+comment: |
+  Sorry /u/{{author}}, but [your {{kind}}]({{permalink}}) was removed from /r/{{subreddit}} for the following reason(s):
+
+  > ### Household plan complaint
+
+  > We get it. No one likes this. [We've been getting the same posts about it for months](https://www.reddit.com/r/netflix/search?q=household&restrict_sr=on&include_over_18=on&sort=new&t=all).
+
+  > If you haven't already you **_really should_** send feedback about this directly to Netflix [via their customer service team](https://help.netflix.com/en/contactus) on the link below. They, aparently, [pay attention with an internal tracker for customer complaints](https://www.reddit.com/r/netflix/comments/3pudfh/_/cwcxs2b/).
+
+  > This subreddit is not owned or moderated by Netflix or any of their employees, so comments about the household plan will not be seen by anyone in a position to do anything here.
+
+  > * https://help.netflix.com/en/contactus
+
+  *****
+
+  *^(Don't reply to this comment directly,)* [*^(send the community moderators a message instead.)*](https://www.reddit.com/message/compose/?to=/r/{{subreddit}}) [*^(r/Netflix)*](https://www.reddit.com/r/{{subreddit}}) *^(is not owned or moderated by Netflix or any of their employees.)*
+comment_stickied: true
+comment_locked: true
+action_reason: "Household plan complaint. Author [/u/{{author}}], domain: [{{match}}]"
+---

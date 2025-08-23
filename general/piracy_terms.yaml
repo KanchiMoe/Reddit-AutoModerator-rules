@@ -1,0 +1,14 @@
+---
+# Piracy terms
+# src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/general/piracy_terms.yaml
+# Last updated: 2025-08-20
+body+title (regex): [
+  "piracy", "pirate", "pirating",
+  "(?i)(7|seven|open|high|free) seas",                   # sea variants
+  "(?i)join(?:ing)? the strawhats",                      # join the strawhats, one peace reference
+  "(?i)\bsailing\b|\bset (?:the )?sail\b|\bsail the\b",  # sailing variants
+  "\u2620",                                              # skull unicode, NOT emoji
+]
+action: remove
+action_reason: "Piracy keyword. Author: [/u/{{author}}] Match: [{{match}}]"
+---
