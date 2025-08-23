@@ -1,0 +1,25 @@
+---
+# Removes common occurrences
+# src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/subreddit_specific/nevertellmetheodds/common_common.yaml
+# Last updated: 2025-08-23
+type: submission
+title+body (regex): ["receipt(s)?", "twin egg(s)?", "double yolk(s)?", "double-yolk(s)?", "2 yolks", "clover", "(four|five|six|seven|eight|[4-8]) leaf(ed)?", "(four|five|six|seven|eight|[4-8])-leaf(ed)?", "(four|five|six|seven|eight|[4-8]) leaves", "fortune cookie", "robin hood", "robinhood", "same fortune"]
+action: remove
+comment: |
+  Sorry /u/{{author}}, but [your {{kind}}]({{permalink}}) was removed from /r/{{subreddit}} for the following reason(s):
+
+  > ### Not odds defying / common occurrence
+
+  > Submissions must be nearly impossible feats of achievement, those with great degree of difficulty or incredible odds.
+
+  > Your {{kind}} seems to be about a very common occurrence.
+
+  Thank you for contributing to the subreddit!
+
+  *****
+
+  *^(Don't reply to this comment directly,)* [*^(send the community moderators a message instead.)*](https://www.reddit.com/message/compose/?to=/r/{{subreddit}})
+action_reason: "Common odds (common occurrence). Author: [/u/{{author}}] Match: [{{match}}]"
+comment_stickied: true
+comment_locked: true
+---
