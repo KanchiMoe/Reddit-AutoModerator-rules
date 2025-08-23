@@ -60,10 +60,10 @@ police_phone_numbers: [
   "416-808-4200",  # Toronto Police Service
   "800-659-4264",
   "780-423-4567",  # Edmonton Police Service, non-emergency
-  "865-354-3388",
-  "732-873-5533",
-  "902-679-5555",
-  "718-574-1605",
+  "865-354-3388",  # Rockwood Police Department
+  "732-873-5533",  # Franklin Township Police Department
+  "902-679-5555",  # RCMP, Kings District East Detachment, non-emergency
+  "718-574-1605",  # NYPD, 83rd Precinct
   "423-698-2525",  # Chattanooga Police Department (Tennessee)
   "306-777-6500",  # Regina (Saskatchewan) Police
   "204-986-6250",  # Winnipeg Police
