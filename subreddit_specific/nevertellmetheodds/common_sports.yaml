@@ -1,0 +1,25 @@
+---
+# Removes common odds, sports related
+# src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/subreddit_specific/nevertellmetheodds/common_sports.yaml
+# Last updated: 2025-08-23
+type: submission
+title: ["umpire", "little league", "golf", "handball"]
+action: remove
+comment: |
+  Sorry /u/{{author}}, but [your {{kind}}]({{permalink}}) was removed from /r/{{subreddit}} for the following reason(s):
+
+  > ### Not odds defying
+  
+  > Submissions must be nearly impossible feats of achievement, those with great degree of difficulty or incredible odds.
+
+  > Posts based entirely around skill and/or persistence, including deliberate tricks and stunts, are not allowed.
+
+  > Sports fall in this category.
+  
+  *****
+
+  *^(Don't reply to this comment directly,)* [*^(send the community moderators a message instead.)*](https://www.reddit.com/message/compose/?to=/r/{{subreddit}})
+action_reason: "Common odds (sports). Author: [/u/{{author}}] Match: [{{match}}]"
+comment_stickied: true
+comment_locked: true
+---
