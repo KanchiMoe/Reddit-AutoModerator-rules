@@ -14,7 +14,7 @@ title+body (regex): [
   "automod(erator)?",
   # admins
   "admins?"
-  ]
+]
 author:
   is_moderator: false
 modmail: |
@@ -31,5 +31,5 @@ modmail: |
   *****
 
   _Please leave a private mod note before archiving to let other mods know if any action has been taken on this_.
-modmail_subject: "[notification] 
+modmail_subject: "[notification]"
 ---
