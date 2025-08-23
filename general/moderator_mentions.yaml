@@ -18,7 +18,7 @@ title+body (regex): [
 author:
   is_moderator: false
 modmail: |
-  The user, /u/{{author}}, was detected making a {{kind}}, which included a keyword that might be talking about mods, moderators, or the subreddit.
+  The user, /u/{{author}}, was detected making a {{kind}}, which included a keyword that might be talking about moderators, or the subreddit.
 
   Specific match: `{{match}}`, link to the {{kind}}: {{permalink}}
 
