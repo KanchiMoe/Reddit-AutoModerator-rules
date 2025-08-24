@@ -1,7 +1,7 @@
 ---
 # Someone said the odds!
 # src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/subreddit_specific/nevertellmetheodds/odds.yaml
-# Last updated: 2025-08-23
+# Last updated: 2025-08-24
 type: comment
 body (regex): ["the? odds (are|would be|of)", "(one|1) in (a|an|one|1)? million"]
 action: remove
