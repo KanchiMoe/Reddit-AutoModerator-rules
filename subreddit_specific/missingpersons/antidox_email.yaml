@@ -1,9 +1,9 @@
 ---
 # Anti-dox rules on email addresses, allowing police addresses
 # src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/subreddit_specific/missingpersons/antidox_email.yaml
-# Last updated: 2025-07-01
+# Last updated: 2025-08-23
 title+body (regex): ['(?!(abuse|help|info|no-?reply|phishing|service|spoof|support)\@)[\w!#$%&\x27*+\-./=?\^\x60{|}~]+\@([\w-]{1,64}\.)+([a-z]{2,16}|xn--[a-z0-9-]{1,60})']
-~title+body: ["@south-wales.police.uk", "missing@police.portlandoregon.gov", "wayne.manthe@cityofwinder.com", "@rcmp-grc.gc.ca", "@flathead.mt.gov", "@deltapolice.ca", "@townofpendleton.org", "@njsp.gov", "@puyallupwa.gov", "info@antipredatorproject.org", "detective@ci.durham.nh.us", "coldcase.dpd@dallaspolice.gov", "@miramarpd.org", "missingp@njsp.org", "@bia.gov"]
+~title+body: ["@south-wales.police.uk", "missing@police.portlandoregon.gov", "wayne.manthe@cityofwinder.com", "@rcmp-grc.gc.ca", "@flathead.mt.gov", "@deltapolice.ca", "@townofpendleton.org", "@njsp.gov", "@puyallupwa.gov", "info@antipredatorproject.org", "detective@ci.durham.nh.us", "coldcase.dpd@dallaspolice.gov", "@miramarpd.org", "missingp@njsp.org", "@bia.gov", "@nypd.org"]
 ~author: ["Example"]
 action: remove
 action_reason: "Antidox - email address detected [{{match}}]"

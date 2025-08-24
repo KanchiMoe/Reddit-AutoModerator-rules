@@ -1,0 +1,25 @@
+---
+# Removes "post lined up" posts
+# src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/subreddit_specific/nevertellmetheodds/common_lined_up.yaml
+# Last updated: 2025-08-23
+type: submission
+title+body: ["feed", "lined up", "line up", "posts", "beside eachother", "beside each other", "next to each other", "in a row", "back-to-back", "back to back", "the same post", "scrolling reddit", "browsing reddit", "scrolling through reddit", "browsing on reddit", "browsing through reddit", "looking at reddit", "my feed"]
+action: remove
+comment: |
+  Sorry /u/{{author}}, but [your {{kind}}]({{permalink}}) was removed from /r/{{subreddit}} for the following reason(s):
+
+  > ### Not odds defying
+
+  > Submissions must be nearly impossible feats of achievement, those with great degree of difficulty or incredible odds.
+
+  > Posts lining up, or being next to each other are not odds-defying.
+
+  Thank you for contributing to the subreddit!
+
+  *****
+
+  *^(Don't reply to this comment directly,)* [*^(send the community moderators a message instead.)*](https://www.reddit.com/message/compose/?to=/r/{{subreddit}})
+action_reason: "Common odds (posts lined up). Author: [/u/{{author}}] Match: [{{match}}]"
+comment_stickied: true
+comment_locked: true
+---
