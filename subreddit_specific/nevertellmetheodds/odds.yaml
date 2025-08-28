@@ -3,7 +3,10 @@
 # src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/subreddit_specific/nevertellmetheodds/odds.yaml
 # Last updated: 2025-08-24
 type: comment
-body (regex): ["the? odds (are|would be|of)", "(one|1) in (a|an|one|1)? million"]
+body (regex): ["(?i)the? odds (are|would be|of)", "(?i)(one|1) in (a|an|one|1)? million"]
 action: remove
 action_reason: "Mentioned the odds. Author: [/u/{{author}}], match: [{{match}}]"
+message: |
+  https://www.youtube.com/watch?v=qKR0oMqFcVI
+message_subject: "Never tell me the odds!"
 ---
