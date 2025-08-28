@@ -1,0 +1,17 @@
+---
+# Removes claims there was no abduction
+# src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/subreddit_specific/madeleinemccann/no_abduction.yaml
+# Last updated: 2025-08-28
+type: any
+body+title (regex): [
+  "(?i)(phantom|no) abductor",
+  "(?i)(false|fake(?:d)?) abduction",
+  "(?i)she was not (?:abducted|kidnapped)",
+  "(?i)no evidence of (?:an? )?(abduction|kidnapping)",
+  "(?i)no evidence to support she was (kidnapped|abducted)",
+  "(?i)no evidence (?:to support|supporting) (?:a|an) (kidnap(?:ping)?|abduction)",
+  "staged an abduction",
+]
+action: remove
+action_reason: "No abduction claims. Author: [/u/{{author}}], match: [{{match}}]"
+---
