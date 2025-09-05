@@ -17,6 +17,7 @@ title+body (regex): [
 ]
 author:
   is_moderator: false
+  ~name (includes): "-ModTeam"
 modmail: |
   The user, /u/{{author}}, was detected making a {{kind}}, which included a keyword that might be talking about moderators, or the subreddit.
 
