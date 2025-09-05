@@ -4,8 +4,8 @@
 # Last updated: 2025-08-28
 type: any
 body+title (regex): [
-  "(?i)(phantom|no) abductor",
   "(?i)(false|fake(?:d)?) abduction",
+  "(?i)(phantom|no|fictional) abductor",
   "(?i)she was not (?:abducted|kidnapped)",
   "(?i)no evidence of (?:an? )?(abduction|kidnapping)",
   "(?i)no evidence to support she was (kidnapped|abducted)",
