@@ -1,9 +1,9 @@
 ---
 # Conspiracy theories that have no logical backing
 # src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/subreddit_specific/madeleinemccann/conspiracy_theories.yaml
-# Last updated: 2025-08-17
+# Last updated: 2025-09-05
 type: any
-title+body+domain (regex): ["podesta", "keep the truth covered up", "ghislaine", "israeli", "israel", "mossad", "adrenochrome", "bioweapon", "cv19", "immigrant", "zionists", "foxman", "bilderberg"]
+title+body+domain (regex): ["podesta", "keep the truth covered up", "ghislaine", "israeli", "israel", "mossad", "adrenochrome", "bioweapon", "cv19", "immigrant", "zionists", "foxman", "bilderberg", "epstein", "Andrew Breitbart", "clement freud"]
 modmail_subject: "[notification] Conspiracy theory {{kind}}"
 modmail: |
   The user, /u/{{author}}, might be posting about a whacked conspiracy theory.
