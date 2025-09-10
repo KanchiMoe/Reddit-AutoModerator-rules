@@ -1,7 +1,7 @@
 ---
 # Notify via modmail if "mods" or related terms are mentioned
 # src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/general/moderator_mentions.yaml
-# Last updated: 2025-08-23
+# Last updated: 2025-09-06
 type: any
 title+body (regex): [
   # mods/moderators/etc
@@ -17,6 +17,7 @@ title+body (regex): [
 ]
 author:
   is_moderator: false
+  ~name (includes): "-ModTeam"
 modmail: |
   The user, /u/{{author}}, was detected making a {{kind}}, which included a keyword that might be talking about moderators, or the subreddit.
 
