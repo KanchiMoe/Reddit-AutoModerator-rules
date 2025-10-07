@@ -1,0 +1,25 @@
+---
+# Removes political submissions
+# src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/subreddit_specific/crunchyroll/politics_submissions.yaml
+# Last updated: 2025-10-03
+type: submission
+title+body: ["israel", "israeli", "aegisub", "ooona"]
+action: remove
+comment: |
+  Sorry /u/{{author}}, but [your {{kind}}]({{permalink}}) was removed from /r/{{subreddit}} for the following reason(s):
+
+  > ### Political
+
+  > Your {{kind}} appears to be discussing politics, a political subject, or something with strong political ties.
+
+  > /r/{{subreddit}} is not a suitable place to discuss political topics.
+
+  > Please consider posting it [to one of these subreddits instead](https://www.reddit.com/subreddits/search?q=politics).
+
+  *****
+
+  *^(Don't reply to this comment directly,)* [*^(send the community moderators a message instead.)*](https://www.reddit.com/message/compose/?to=/r/{{subreddit}}) [*^(r/{{subreddit}})*](https://www.reddit.com/r/{{subreddit}}) *^(is not owned or moderated by Crunchyroll or any of their employees.)*
+action_reason: "Political topic. Author: [/u/{{author}}] Match: [{{match}}]"
+comment_stickied: true
+comment_locked: true
+---

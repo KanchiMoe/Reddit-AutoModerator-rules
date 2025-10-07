@@ -1,9 +1,9 @@
 ---
 # Sends users a message if "Aura kill yourself" is said.
 # src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/subreddit_specific/frieren/aura_kys_notification.yaml
-# Last updated: 2025-07-03
+# Last updated: 2025-09-16
 type: comment
-body (includes-word): ["Aura, kill yourself", "Aura kill yourself"]
+body (includes-word): ["Aura, kill yourself", "Aura kill yourself", "aura, kys"]
 message_subject: "Courtesy message about the {{kind}} you made in /r/{{subreddit}}"
 message: |
   Hi /u/{{author}}, this is a courtesy message about the {{kind}} you made on /r/{{subreddit}}.

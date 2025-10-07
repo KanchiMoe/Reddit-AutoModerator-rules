@@ -1,9 +1,9 @@
 ---
 # Remove submissions to crowdfunding websites
 # src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/subreddit_specific/missingpersons/remove_crowdfunding_submissions.yaml
-# Last updated: 2025-07-01
+# Last updated: 2025-09-22
 type: submission
-standard: crowdfunding sites
+domain: [crowdrise.com, kickstarter.com, kck.st, giveforward.com, gogetfunding.com, indiegogo.com, igg.me, generosity.com, gofundme.com, gofund.me, patreon.com, prefundia.com, razoo.com, totalgiving.co.uk, youcaring.com, youcaring.net, youcaring.org, petcaring.com, walacea.com]
 action: remove
 comment: |
   Hi /u/{{author}}, thanks for your {{kind}} to /r/{{subreddit}}. Unfortunately, it has been removed for the following reason(s):

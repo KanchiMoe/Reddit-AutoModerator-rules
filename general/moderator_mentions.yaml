@@ -1,7 +1,7 @@
 ---
 # Notify via modmail if "mods" or related terms are mentioned
 # src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/general/moderator_mentions.yaml
-# Last updated: 2025-09-06
+# Last updated: 2025-09-18
 type: any
 title+body (regex): [
   # mods/moderators/etc
@@ -15,6 +15,7 @@ title+body (regex): [
   # admins
   "admins?"
 ]
+~title+body (regex): ["(trump|biden) admin(istration)?"]
 author:
   is_moderator: false
   ~name (includes): "-ModTeam"
