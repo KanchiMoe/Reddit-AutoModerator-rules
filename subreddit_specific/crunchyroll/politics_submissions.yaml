@@ -8,7 +8,7 @@ action: remove
 comment: |
   Sorry /u/{{author}}, but [your {{kind}}]({{permalink}}) was removed from /r/{{subreddit}} for the following reason(s):
 
-  > ### Politics
+  > ### Political
 
   > Your {{kind}} appears to be discussing politics, a political subject, or something with strong political ties.
 
