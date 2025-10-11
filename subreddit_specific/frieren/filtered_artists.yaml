@@ -16,20 +16,20 @@ action: filter
 comment: |
   Hi /u/{{author}}, your {{kind}} is currently under review for the following reason(s):
 
-  > ### NSFW artist
+  > ### Artist known for suggestive content
 
-  > The artist, {{match}}, frequently draws NSFW content. NSFW content is not allowed on /r/{{subreddit}}.
+  > The artist, {{match}}, often creates content that can go beyond what is acceptable under /r/{{subreddit}}'s NSFW rule.
 
-  > However, they occasionally draw safe-for-work content, which is allowed.
+  > While /r/{{subreddit}} does allow some mildly suggestive or risqué artwork, content that's overtly explicit or inappropriate isn't permitted.
 
-  > Your {{kind}} is currently being held for manual review to ensure it is one of their safe for work drawings.
+  > Because this artist's work varies, we're manually reviewing your {{kind}} to ensure it fits within the subreddit's guidelines.
 
-  **Do not delete your {{kind}}**. It will be reviewed by one of our moderators as soon as possible.
+  **Please don't delete your {{kind}}**. It will be reviewed by a moderator as soon as possible.
 
   *****
 
   *^(Don't reply to this comment directly,)* [^(send the community moderators a message instead.)](https://www.reddit.com/message/compose/?to=/r/{{subreddit}})
-action_reason: "NSFW artist. Author: [/u/{{author}}] Match: [{{match}}]"
+action_reason: "Suggestive content artist. Author: [/u/{{author}}] Match: [{{match}}]"
 comment_locked: true
 comment_stickied: true
 moderators_exempt: false
