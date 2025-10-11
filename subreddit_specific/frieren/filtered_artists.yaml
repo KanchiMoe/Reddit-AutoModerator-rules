@@ -1,0 +1,36 @@
+---
+# Filter artists who's work is sometimes too explicit or inappropriate
+# src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/subreddit_specific/frieren/filtered_artists.yaml
+# Last updated: 2025-10-11
+type: submission
+title+body: [
+  "khyle", "khyleri", "khyleri_",
+  "sydus", "sydusart",
+  "dismaidenart", "dismaiden",
+  "Qiandai以宇", "Qiandai", "qiandaiyiyu", "以宇",
+  "Inkspirate", "Inkspirate_art",
+  "Osididit", "Osidid",
+  "squeezable"
+]
+action: filter
+comment: |
+  Hi /u/{{author}}, your {{kind}} is currently under review for the following reason(s):
+
+  > ### Artist known for suggestive content
+
+  > The artist, {{match}}, often creates content that can go beyond what is acceptable under /r/{{subreddit}}'s NSFW rule.
+
+  > While /r/{{subreddit}} does allow some mildly suggestive or risqué artwork, content that's overtly explicit or inappropriate isn't permitted.
+
+  > Because this artist's work varies, we're manually reviewing your {{kind}} to ensure it fits within the subreddit's guidelines.
+
+  **Please don't delete your {{kind}}**. It will be reviewed by a moderator as soon as possible.
+
+  *****
+
+  *^(Don't reply to this comment directly,)* [^(send the community moderators a message instead.)](https://www.reddit.com/message/compose/?to=/r/{{subreddit}})
+action_reason: "Suggestive content artist. Author: [/u/{{author}}] Match: [{{match}}]"
+comment_locked: true
+comment_stickied: true
+moderators_exempt: false
+---
