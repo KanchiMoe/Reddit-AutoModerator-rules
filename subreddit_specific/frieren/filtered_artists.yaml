@@ -1,0 +1,36 @@
+---
+# Filter posts from specific artists
+# src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/subreddit_specific/frieren/filtered_artists.yaml
+# Last updated: 2025-10-11
+type: submission
+title+body: [
+  "khyle", "khyleri", "khyleri_",
+  "sydus", "sydusart",
+  "dismaidenart", "dismaiden",
+  "Qiandai以宇", "Qiandai","qiandaiyiyu", "以宇",
+  "Inkspirate", "Inkspirate_art",
+  "Osididit", "Osidid",
+  "squeezable"
+]
+action: filter
+comment: |
+  Hi /u/{{author}}, your {{kind}} is currently under review for the following reason(s):
+
+  > ### NSFW artist
+
+  > The artist, {{match}}, frequently draws NSFW content. NSFW content is not allowed on /r/{{subreddit}}.
+
+  > However, they occasionally draw safe-for-work content, which is allowed.
+
+  > Your {{kind}} is currently being held for manual review to ensure it is one of their safe for work drawings.
+
+  **Do not delete your {{kind}}**. It will be reviewed by one of our moderators as soon as possible.
+
+  *****
+
+  *^(Don't reply to this comment directly,)* [^(send the community moderators a message instead.)](https://www.reddit.com/message/compose/?to=/r/{{subreddit}})
+action_reason: "NSFW artist. Author: [/u/{{author}}] Match: [{{match}}]"
+comment_locked: true
+comment_stickied: true
+moderators_exempt: false
+---
