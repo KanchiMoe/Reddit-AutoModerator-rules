@@ -1,5 +1,5 @@
 ---
-# Filter posts from specific artists
+# Filter artists who's work is sometimes too explicit or inappropriate
 # src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/subreddit_specific/frieren/filtered_artists.yaml
 # Last updated: 2025-10-11
 type: submission
