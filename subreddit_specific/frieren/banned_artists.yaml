@@ -1,0 +1,32 @@
+---
+# Banned artists, who's work is always explicit/inappropriate
+# src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/subreddit_specific/frieren/banned_artists.yaml
+# Last updated: 2025-10-11
+type: submission
+title+body: [
+  "Calamari Cakes", "CalamariCakes",
+  "snegovski", "Snegovski9623",
+  "Fartsonis",
+  "Pokooo"
+]
+action: remove
+comment: |
+  Sorry /u/{{author}}, but your [{{kind}}]({{permalink}}) was removed from /r/{{subreddit}} for the following reason(s):
+
+  > ### Artist known for explicit content
+
+  > The artist, {{match}}, consistently creates material that goes beyond what's acceptable under /r/{{subreddit}}'s NSFW rule.
+
+  > While /r/{{subreddit}} does allow some mildly suggestive or risqué artwork, this artist's work is typically overtly explicit or inappropriate and therefore not permitted here.
+
+  If this artwork _is not_ explicit or inappropriate, use the link below.
+
+  * 「[**Message the subreddit moderators**](https://reddit.com/message/compose?to=/r/{{subreddit}}&subject=Explicit%20artist%20appeal&message=Insert%20additional%20information%20here.%0A%0A---%20Do%20not%20edit%20below%20this%20line%20---%0A%0AArtist%3A%20{{match}}%0A%0ALink%3A%20{{permalink}})」
+
+  *****
+
+  *^(Don't reply to this comment directly,)* [^(send the community moderators a message instead.)](https://www.reddit.com/message/compose/?to=/r/{{subreddit}})
+action_reason: "Explicit content artist. Author: [/u/{{author}}] Match: [{{match}}]"
+comment_locked: true
+comment_stickied: true
+---
