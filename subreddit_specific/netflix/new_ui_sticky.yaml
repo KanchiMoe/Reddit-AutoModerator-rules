@@ -1,7 +1,7 @@
 ---
-# Adds a sticky if a post mentions the new UI
+# Removes post if it mentions the new UI
 # src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/subreddit_specific/netflix/new_ui_sticky.yaml
-# Last updated: 2025-08-01
+# Last updated: 2025-10-15
 type: submission
 title+body: ["new ui", "recent redesign", "new userface", "new design", "new interface", "apps interface", "user interface", "app update"]
 action: remove
