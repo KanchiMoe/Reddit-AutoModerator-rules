@@ -1,9 +1,9 @@
 ---
-# Adds a sticky if a post mentions the new UI
+# Removes post if it mentions household plan
 # src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/subreddit_specific/netflix/household_plan.yaml
-# Last updated: 2025-08-19
+# Last updated: 2025-10-15
 type: submission
-title+body: ["household plan", "household account"]
+title+body: ["household plan", "household account", "not part of the household"]
 action: remove
 comment: |
   Sorry /u/{{author}}, but [your {{kind}}]({{permalink}}) was removed from /r/{{subreddit}} for the following reason(s):

@@ -1,9 +1,11 @@
 ---
 # Sends users a message if "Aura kill yourself" is said.
 # src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/subreddit_specific/frieren/aura_kys_notification.yaml
-# Last updated: 2025-09-16
+# Last updated: 2025-10-12
 type: comment
-body (includes-word): ["Aura, kill yourself", "Aura kill yourself", "aura, kys"]
+action: approve
+action_reason: "Aura kill yourself {{kind}}. Author: [/u/{{author}}] Match: [{{match}}]"
+body (regex): ['(?i)\baura[\s,]*?(?:kill yourself|kys)\b']
 message_subject: "Courtesy message about the {{kind}} you made in /r/{{subreddit}}"
 message: |
   Hi /u/{{author}}, this is a courtesy message about the {{kind}} you made on /r/{{subreddit}}.
@@ -12,13 +14,13 @@ message: |
 
   Your {{kind}} included the phrase "{{match}}".
 
-  We, as the community moderators, recognise that this is a well known, often quoted, phrase from the Frieren anime.
+  We, as the /r/{{subreddit}} community moderators, recognise that this is a well known, often quoted, memed, phrase from the Frieren anime.
 
-  The reddit administrators, and it's content removal system however, do not know that. Even though we have explained it to them several times.
+  The reddit administrators (employees of reddit) and it's AI content removal system however, do not know that. We have tried to explain this to them several times.
 
-  Your {{kind}} might get removed in the future by the reddit administrators (or it's AI systems) for "inciting violence".
+  We have approved your {{kind}}. However Your {{kind}} might get removed in the future by the reddit administrators (or it's AI systems) for "inciting violence". You may get warned too.
 
-  Again, we (as the moderators) know that it isn't. We have tried to get the reddit admins to stop doing this, but they have not done so.
+  Again, we (as the moderators) know that this isn't the case, and do not agree with this removal. We have tried to get the reddit admins to stop, but they have not done so.
 
   If your {{kind}} does get removed - **we strongly urge you to appeal it's removal** on these grounds.
 

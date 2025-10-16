@@ -1,0 +1,33 @@
+---
+# Remove hiatus leaks
+# src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/subreddit_specific/frieren/hiatus_submission.yaml
+# Last updated: 2025-10-16
+type: submission
+title+body: ["hiatus", "indefinite", "permanent", "suspension"]
+action: remove
+comment: |
+  Sorry /u/{{author}}, but your [{{kind}}]({{permalink}}) was removed from /r/{{subreddit}} for the following reason(s):
+
+  > ### Hiatus spoiler/leak
+
+  > We do not allow {{kind}}s about a hiatus (either starting or ending) before it has been officially announced.
+
+  > Assume that it isn't true unless it has been officially announced. If it has been announced, there will be a post about it on the subreddit.
+
+  > Please wait for it to be officially announced before making any {{kind}}s on it.
+
+  _Thanks for your understanding._
+
+  *****
+
+  Was this a mistake? Has it been officially announced or unrelated?
+
+  * 「[**Message the subreddit moderators**](https://reddit.com/message/compose?to=/r/{{subreddit}}&subject=Hiatus%20{{kind}}%20appeal&message=Insert%20additional%20information%20here.%0A%0A---%20Do%20not%20edit%20below%20this%20line%20---%0A%0ALink%3A%20{{permalink}})」
+
+  *****
+
+  *^(Don't reply to this comment directly,)* [^(send the community moderators a message instead.)](https://www.reddit.com/message/compose/?to=/r/{{subreddit}})
+action_reason: "Hiatus spoilers. Author: [/u/{{author}}] Match: [{{match}}]"
+comment_locked: true
+comment_stickied: true
+---
