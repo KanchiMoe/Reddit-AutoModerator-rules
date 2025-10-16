@@ -1,9 +1,9 @@
 ---
 # Remove hiatus leaks
 # src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/subreddit_specific/frieren/hiatus_submission.yaml
-# Last updated: 2025-10-11
+# Last updated: 2025-10-16
 type: submission
-title+body: ["hiatus"]
+title+body: ["hiatus", "indefinite", "permanent", "suspension"]
 action: remove
 comment: |
   Sorry /u/{{author}}, but your [{{kind}}]({{permalink}}) was removed from /r/{{subreddit}} for the following reason(s):
