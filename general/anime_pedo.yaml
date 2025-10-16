@@ -1,0 +1,9 @@
+---
+# Removes pedo related, anti-anime
+# src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/general/anime_pedo.yaml
+# Last updated: 2025-10-16
+type: any
+title+body: ["pedo", "p*do", "pedophilic", "pedophilia", "pedophile", "podophilic", "zoophile", "loli"]
+action: remove
+action_reason: "Problematic anti-anime/pedo related {{kind}}. Author: [/u/{{author}}] Match: [{{match}}]"
+---
