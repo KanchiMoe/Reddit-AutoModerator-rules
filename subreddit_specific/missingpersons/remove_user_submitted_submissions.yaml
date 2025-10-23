@@ -3,7 +3,7 @@
 # src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/subreddit_specific/missingpersons/remove_user_submitted_submissions.yaml
 # Last updated: 2025-10-16
 type: submission
-domain: ["craigslist.org", "twitter.com", "tiktok.com", "discordapp.com", "discord.com", "discord.gg", "docs.google.com", "drive.google.com", "medium.com", "carrd.co", "wordpress.com", "tumblr.com", "tiiny.site", "pastebin.com", "amwfans.com", "blogspot.com", "x.com", "onedrive.live.com", "substack.com", "googleusercontent.com", "videy.co", "boredbat.com", "youtube.com", "youtu.be", "lipstickalley.com", "instagram.com", "share.icloud.com", "boredpanda.com", "disappearedblog.com", "files.fm"]
+domain: ["craigslist.org", "twitter.com", "tiktok.com", "discordapp.com", "discord.com", "discord.gg", "docs.google.com", "drive.google.com", "medium.com", "carrd.co", "wordpress.com", "tumblr.com", "tiiny.site", "pastebin.com", "amwfans.com", "blogspot.com", "x.com", "onedrive.live.com", "substack.com", "googleusercontent.com", "videy.co", "boredbat.com", "youtube.com", "youtu.be", "lipstickalley.com", "instagram.com", "share.icloud.com", "boredpanda.com", "disappearedblog.com", "files.fm", "crimesolverscentral.com"]
 action: remove
 comment: |
   Hi /u/{{author}}, thanks for your {{kind}} to /r/{{subreddit}}. Sadly, it has been removed for the following reason(s):
