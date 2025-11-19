@@ -1,9 +1,9 @@
 ---
 # Remove petition submissions
 # src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/subreddit_specific/netflix/remove_petition_submissions.yaml
-# Last updated: 2025-08-05
+# Last updated: 2025-11-16
 type: submission
-domain+body: [act.rootsaction.org, actblue.com, action.sumofus.org, activism.thenation.com, avaaz.org, change.org, chn.ge, chng.it, credomobilize.com, demandprogress.org, easypolls.net, go.berniesanders.com, gopetition.com, leftaction.com, moveon.org, petitions.whitehouse.gov, signon.org, startjoin.com, strawpoll.me, takepart.com, thepetitionsite.com, watchdog.net]
+domain+body: [act.rootsaction.org, actblue.com, action.sumofus.org, activism.thenation.com, avaaz.org, change.org, chn.ge, chng.it, credomobilize.com, demandprogress.org, easypolls.net, go.berniesanders.com, gopetition.com, leftaction.com, moveon.org, petitions.whitehouse.gov, signon.org, startjoin.com, strawpoll.me, takepart.com, thepetitionsite.com, watchdog.net, openpetition.org]
 action: remove
 action_reason: "Petition submission. Author [/u/{{author}}], domain: [{{match}}]"
 comment: |

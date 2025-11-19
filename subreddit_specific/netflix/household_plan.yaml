@@ -1,9 +1,9 @@
 ---
 # Removes post if it mentions household plan
 # src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/subreddit_specific/netflix/household_plan.yaml
-# Last updated: 2025-10-15
+# Last updated: 2025-10-28
 type: submission
-title+body: ["household plan", "household account", "not part of the household"]
+title+body: ["household plan", "household account", "not part of the household", "household wifi", "netflix household"]
 action: remove
 comment: |
   Sorry /u/{{author}}, but [your {{kind}}]({{permalink}}) was removed from /r/{{subreddit}} for the following reason(s):

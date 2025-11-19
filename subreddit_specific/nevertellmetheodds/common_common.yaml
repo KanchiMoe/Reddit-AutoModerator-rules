@@ -1,9 +1,9 @@
 ---
 # Removes common occurrences
 # src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/subreddit_specific/nevertellmetheodds/common_common.yaml
-# Last updated: 2025-08-23
+# Last updated: 2025-10-23
 type: submission
-title+body (regex): ["receipt(s)?", "twin egg(s)?", "double yolk(s)?", "double-yolk(s)?", "2 yolks", "clover", "(four|five|six|seven|eight|[4-8]) leaf(ed)?", "(four|five|six|seven|eight|[4-8])-leaf(ed)?", "(four|five|six|seven|eight|[4-8]) leaves", "fortune cookie", "robin hood", "robinhood", "same fortune"]
+title+body (regex): ["receipt(s)?", "twin egg(s)?", "double yolk(?:s|ed)?", "double-yolk(?:s|ed)?", "2 yolks", "clover", "(four|five|six|seven|eight|[4-8]) leaf(ed)?", "(four|five|six|seven|eight|[4-8])-leaf(ed)?", "(four|five|six|seven|eight|[4-8]) leaves", "fortune cookie", "robin hood", "robinhood", "same fortune"]
 action: remove
 comment: |
   Sorry /u/{{author}}, but [your {{kind}}]({{permalink}}) was removed from /r/{{subreddit}} for the following reason(s):

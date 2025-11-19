@@ -1,9 +1,9 @@
 ---
 # Report on political terms/words
 # src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/subreddit_specific/missingpersons/politics_reporter.yaml
-# Last updated: 2025-08-30
+# Last updated: 2025-10-28
 type: submission
-body (includes-word): ["active shooter drills", "immigration", "trump", "election", "mass migration", "totalitarian regime", "commies", "propagandized", "MAGA", "obama", "economy", "xenophobic", "democrats", "the dems", "concentration camps", "GOP"]
+body (includes-word): ["active shooter drills", "immigration", "trump", "election", "mass migration", "totalitarian regime", "commies", "propagandized", "MAGA", "obama", "economy", "xenophobic", "democrats", "the dems", "concentration camps", "GOP", "social construct", "trans", "woke"]
 action: report
 modmail_subject: "Possible political discussion"
 modmail: |
