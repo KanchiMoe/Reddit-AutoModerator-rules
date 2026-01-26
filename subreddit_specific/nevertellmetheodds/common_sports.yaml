@@ -1,9 +1,9 @@
 ---
 # Removes common odds, sports related
 # src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/subreddit_specific/nevertellmetheodds/common_sports.yaml
-# Last updated: 2025-11-16
+# Last updated: 2026-01-17
 type: submission
-title+body: ["umpire", "little league", "golf", "handball", "the open", "wickets", "baseball", "hockey", "football", "nba"]
+title+body: ["umpire", "little league", "golf", "handball", "the open", "wickets", "baseball", "hockey", "football", "nba", "tournament", "snooker", "matches"]
 action: remove
 comment: |
   Sorry /u/{{author}}, but [your {{kind}}]({{permalink}}) was removed from /r/{{subreddit}} for the following reason(s):

@@ -1,0 +1,27 @@
+---
+# Remove submissions to search engines
+# src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/subreddit_specific/missingpersons/search_engines.yaml
+# Last updated: 2026-01-26
+type: submission
+domain: [google.com, share.google]
+action: remove
+comment: |
+  Hi /u/{{author}}, thanks for your {{kind}} to /r/{{subreddit}}. Unfortunately, it has been removed for the following reason(s):
+
+  > ### Link to search engine
+
+  > The link you submitted, shown below, is a link to a search engine, and not the actual web page of the website.
+
+  > Please delete this post, and resubmit it using the correct URL.
+
+  The link you submitted was/is:
+
+  > {{url}}
+
+  *****
+
+  *^(Don't reply to this comment directly,)* [*^(send the community moderators a message instead.)*](https://www.reddit.com/message/compose/?to=/r/{{subreddit}})
+comment_locked: true
+comment_stickied: true
+action_reason: "Submission to search engine. Author [/u/{{author}}], domain: [{{match}}]"
+---
