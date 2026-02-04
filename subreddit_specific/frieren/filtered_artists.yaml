@@ -1,16 +1,17 @@
 ---
 # Filter artists who's work is sometimes too explicit or inappropriate
 # src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/subreddit_specific/frieren/filtered_artists.yaml
-# Last updated: 2025-10-11
+# Last updated: 2026-02-04
 type: submission
 title+body: [
   "khyle", "khyleri", "khyleri_",
-  "sydus", "sydusart",
+  "sydus", "sydusart(s|2)", "sydusarts2",
   "dismaidenart", "dismaiden",
   "Qiandai以宇", "Qiandai", "qiandaiyiyu", "以宇",
   "Inkspirate", "Inkspirate_art",
   "Osididit", "Osidid",
-  "squeezable"
+  "squeezable",
+  "setsumanga", "setsumanga2", "setsu"
 ]
 action: filter
 comment: |

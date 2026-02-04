@@ -1,0 +1,28 @@
+---
+# Remove comments to crowdfunding websites
+# src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/subreddit_specific/missingpersons/crowdfunding_comments.yaml
+# Last updated: 2026-01-18
+type: comment
+body (regex): '(?i)\b(https?://)?([a-z0-9-]+\.)*(crowdrise\.com|kickstarter\.com|kck\.st|giveforward\.com|gogetfunding\.com|indiegogo\.com|igg\.me|generosity\.com|gofundme\.com|gofund\.me|patreon\.com|prefundia\.com|razoo\.com|totalgiving\.co\.uk|youcaring\.com|youcaring\.net|youcaring\.org|petcaring\.com|walacea\.com)\b'
+action: remove
+message: |
+  Hi /u/{{author}}, thanks for [your {{kind}}]({{permalink}}) to /r/{{subreddit}}. Unfortunately, it has been removed for the following reason(s):
+
+  > ### Link to crowdfunding website.
+
+  > Crowdfunding websites do not verify if the person listed is genuinely missing or not.
+
+  > As such, we (the /r/{{subreddit}} moderators) can not verify if:
+
+  > * the person listed is genuinely missing or not
+
+  > * who, or where, any money raised goes to, or that it will be spent on this missing person.
+
+  > And as such, are not allowed on /r/{{subreddit}}.
+
+  > Furthermore, we feel that /r/{{subreddit}} is not an appropriate subreddit to be canvassing for money, even if it is genuine. The risk for scams is just too high. You may want to try in a subreddit for your local area or country instead.
+
+  *****
+message_subject: "Your {{kind}} was removed from /r/{{subreddit}}"
+action_reason: "Comment to crowdfunding website. Author [/u/{{author}}], domain: [{{match}}]"
+---

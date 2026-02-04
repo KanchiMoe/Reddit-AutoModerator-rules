@@ -1,9 +1,9 @@
 ---
 # Remove comments to petition sites
 # src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/subreddit_specific/missingpersons/remove_petition_comments.yaml
-# Last updated: 2025-11-16
+# Last updated: 2026-02-04
 type: comment
-domain: [act.rootsaction.org, actblue.com, action.sumofus.org, activism.thenation.com, avaaz.org, change.org, chn.ge, chng.it, credomobilize.com, demandprogress.org, easypolls.net, go.berniesanders.com, gopetition.com, leftaction.com, moveon.org, petitions.whitehouse.gov, signon.org, startjoin.com, strawpoll.me, takepart.com, thepetitionsite.com, watchdog.net, openpetition.org]
+body (regex): '(?i)\b(https?://)?([a-z0-9-]+\.)*(act\.rootsaction\.org|actblue\.com|action\.sumofus\.org|activism\.thenation\.com|avaaz\.org|change\.org|chn\.ge|chng\.it|credomobilize\.com|demandprogress\.org|easypolls\.net|go\.berniesanders\.com|gopetition\.com|leftaction\.com|moveon\.org|petitions\.whitehouse\.gov|signon\.org|startjoin\.com|strawpoll\.me|takepart\.com|thepetitionsite\.com|watchdog\.net|openpetition\.org|c\.org)\b'
 action: remove
 message_subject: "Your {{kind}} was removed from /r/{{subreddit}}"
 message: |
