@@ -1,13 +1,15 @@
 ---
 # Banned artists, who's work is always explicit/inappropriate
 # src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/subreddit_specific/frieren/banned_artists.yaml
-# Last updated: 2025-10-11
+# Last updated: 2026-02-04
 type: submission
 title+body: [
   "Calamari Cakes", "CalamariCakes",
-  "snegovski", "Snegovski9623",
+  "snegovski", "Snegovski9623", "Sneg9623", "sneg", 
   "Fartsonis",
-  "Pokooo"
+  "Pokooo", 
+  "datboiyeng", "yeng",
+  "kinoharakossuta", "kinohara"
 ]
 action: remove
 comment: |
