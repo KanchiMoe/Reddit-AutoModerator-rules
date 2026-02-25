@@ -19,6 +19,7 @@ title+body (regex): [
   "(?i)(trump'?s?|biden) admin(istration)?",
   "(?i)(office|US) admin",
   "(?i)post was (?:removed|deleted|taken down) (?:using|by its author|and anonymized)",
+  "MoD"
 ]
 author:
   is_moderator: false
