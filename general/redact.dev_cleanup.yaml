@@ -1,10 +1,10 @@
 ---
 # Removes comments that get edited as part of react.dev. The redaction replaces comments with useless information and spams links.
-# src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/refs/heads/master/general/redact.dev_cleanup.yaml
-# Last updated: 2025-07-12
+# src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/general/redact.dev_cleanup.yaml
+# Last updated: 2026-02-25
 type: comment
 is_edited: true
-body (includes-word): ["This post was mass deleted and anonymized with", "anonymized with Redact"]
+body (includes-word): ["[Redact](https://redact.dev/home"]
 action: spam
 message_subject: "Courtesy message about the {{kind}} you edited in /r/{{subreddit}}"
 message: |
