@@ -1,7 +1,7 @@
 ---
 # Enforces timezone in title of post
 # src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/subreddit_specific/psnfriends/timezone_posting_guidelines.yaml
-# Last updated: 2026-03-11
+# Last updated: 2026-03-16
 type: submission
 ~title (regex): '\[(?:UTC(?:[+-](?:1[0-4]|[0-9])(?::(?:30|45))?)?|GMT|BST|WET|WEST|IST|CET|CEST|EET|EEST|MSK|TRT|WAT|CAT|EAT|SAST|GST|AST|IDT|IRST|IRDT|PKT|SLST|NPT|BDT|MMT|ICT|WIB|WITA|WIT|CST|HKT|SGT|JST|KST|AWST|ACST|ACDT|AEST|AEDT|NZST|NZDT|FJT|TOT|NST|NDT|ADT|EST|EDT|CDT|MST|MDT|PST|PDT|AKST|AKDT|HST|COT|PET|VET|ART|BRT|UYT)\]'
 action: remove
@@ -13,7 +13,7 @@ comment: |
 
   > As per our [posting guidelines](/r/PSNFriends/wiki/guidelines), the title of your post **must** contain your timezone. This can either be a [UTC offset or timezone abbreviation](/r/PSNFriends/wiki/posting_guidelines/timezones/). A list of all accepted UTC offsets, or abbreviations can be found on the page below:
 
-  > * /r/PSNFriends/wiki/guidelines
+  > * /r/PSNFriends/wiki/posting_guidelines/timezones/
 
   > Your post title must match one of the offsets or abbreviations listed on that page **in square brackets**. Example: `[ABC]`
 
