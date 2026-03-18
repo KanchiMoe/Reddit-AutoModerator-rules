@@ -1,0 +1,13 @@
+---
+# Removes posts or comments with banned PSN IDs - no notifications. See under the rule on Github for more info.
+# src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/subreddit_specific/psnfriends/banned_psn_ids_no_notifications.yaml
+# Last updated: 2026-03-18
+type: any
+title+body (includes-word): ["Foo", "Bar", "Foobar"]
+action: remove
+action_reason: "Banned PSN ID. Author: [/u/{{author}}] Match: [{{match}}]"
+---
+#
+# This AutoModerator rule should be used for when moderators do not want to be notified if a specific PSN ID has been used.
+# If a notification is wanted, use the "notifications" version of this rule.
+# The user who triggered AutoModerator **is not** notified.
