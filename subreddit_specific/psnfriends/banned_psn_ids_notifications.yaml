@@ -4,7 +4,7 @@
 # Last updated: 2026-03-18
 type: any
 title+body (includes-word): [
-  "xkcsx_x" # male pretending to be a girl, only posting on girls posts
+  "xkcsx_x"  # male pretending to be a girl, only posting on girls posts
 ]
 action: remove
 action_reason: "Banned PSN ID (with modmail notification). Author: [/u/{{author}}] Match: [{{match}}]"

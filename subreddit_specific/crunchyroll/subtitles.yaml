@@ -4,8 +4,8 @@
 # Last updated: 2026-03-24
 type: submission
 body+title (includes-word, regex): [
-  "(subtitle(?:s?))", # subtitles
-  "caption(?:s|ing)?" # captions
+  "(subtitle(?:s?))",  # subtitles
+  "caption(?:s|ing)?"  # captions
 ]
 comment: |
   If you notice an error or problem with Crunchyroll's subtitles or captions, you should contact them directly:
