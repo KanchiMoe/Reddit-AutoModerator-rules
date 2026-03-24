@@ -6,10 +6,10 @@ type: submission
 body+title (includes-word, regex): [
   "(subtitle(?:s?))", # subtitles
   "caption(?:s|ing)?" # captions
-  ]
+]
 comment: |
   If you notice an error or problem with Crunchyroll's subtitles or captions, you should contact them directly:
-  
+
   * **https://help.crunchyroll.com/hc/en-us/articles/19723786867732-There-is-an-error-in-the-subtitles**
 
   *****
