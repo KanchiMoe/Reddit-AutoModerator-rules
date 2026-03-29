@@ -1,0 +1,22 @@
+---
+# Informs users about subtitle errors
+# src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/subreddit_specific/crunchyroll/subtitles.yaml
+# Last updated: 2026-03-24
+type: submission
+body+title (includes-word, regex): [
+  "(subtitle(?:s?))",  # subtitles
+  "caption(?:s|ing)?"  # captions
+]
+comment: |
+  If you notice an error or problem with Crunchyroll's subtitles or captions, you should contact them directly:
+
+  * **https://help.crunchyroll.com/hc/en-us/articles/19723786867732-There-is-an-error-in-the-subtitles**
+
+  *****
+
+  ^(Your {{kind}} contained the word/phrase `{{match}}`, which automatically triggered this message.)
+
+  [*^(r/{{subreddit}})*](https://www.reddit.com/r/{{subreddit}}) *^(is not owned or moderated by {{subreddit}} or any of their employees.)*
+comment_stickied: true
+comment_locked: true
+---

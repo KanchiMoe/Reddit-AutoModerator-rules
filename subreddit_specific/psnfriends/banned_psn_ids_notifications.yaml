@@ -1,0 +1,31 @@
+---
+# Removes posts or comments with banned PSN IDs - with notifications. See under the rule on Github for more info.
+# src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/subreddit_specific/psnfriends/banned_psn_ids_notifications.yaml
+# Last updated: 2026-03-18
+type: any
+title+body (includes-word): [
+  "xkcsx_x"  # male pretending to be a girl, only posting on girls posts
+]
+action: remove
+action_reason: "Banned PSN ID (with modmail notification). Author: [/u/{{author}}] Match: [{{match}}]"
+modmail: |
+  The user, /u/{{author}}, was detected making a {{kind}} which includes a banned PSN ID.
+
+  Specific match: `{{match}}`, link to the {{kind}}: {{permalink}}
+
+  *****
+
+  ^(_What their {{kind}} said, in full:_)
+
+  {{body}}
+
+  *****
+
+  _Please leave a private mod note before archiving to let other mods know if any action has been taken on this_.
+modmail_subject: "[notification] Banned PSN ID used in a {{kind}} by /u/{{author}}"
+---
+#
+# This AutoModerator rule should be used for when moderators want to be notified if a specific PSN ID has been used.
+# For example, to detect ban evading.
+# If no notification is wanted, use the "no notifications" version of this rule.
+# The user who triggered AutoModerator **is not** notified.

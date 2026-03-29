@@ -1,0 +1,27 @@
+---
+# Remove posts about selling gift cards
+# src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/subreddit_specific/psnfriends/gift_cards.yaml
+# Last updated: 2026-03-18
+type: submission
+title+body: ["gift card"]
+action: remove
+action_reason: "Gift cards. Author: [/u/{{author}}] Match: [{{match}}]"
+comment: |
+  Sorry /u/{{author}}, but [your {{kind}}]({{permalink}}) was removed from /r/{{subreddit}} for the following reason(s):
+
+  > ### Gift cards
+
+  > /r/PSNFriends is not a suitable place to buy, sell, or exchange gift cards.
+
+  > You may want to try /r/PlayStation or /r/PlayStationPlus instead.
+
+  Was this a mistake?
+
+  * 「[**Message the subreddit moderators**](https://reddit.com/message/compose?to=/r/{{subreddit}}&subject=Gift%20card%20incorrect%20removal&message=Insert%20additional%20information%20here.%0A%0A---%20Do%20not%20edit%20below%20this%20line%20---%0A%0ALink%3A%20{{permalink}})」
+
+  *****
+
+  *^(Don't reply to this comment directly,)* [*^(send the community moderators a message instead.)*](https://www.reddit.com/message/compose/?to=/r/{{subreddit}})
+comment_stickied: true
+comment_locked: true
+---
