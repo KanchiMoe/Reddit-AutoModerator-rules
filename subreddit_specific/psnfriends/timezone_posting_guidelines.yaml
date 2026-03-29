@@ -1,9 +1,9 @@
 ---
 # Enforces timezone in title of post
 # src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/subreddit_specific/psnfriends/timezone_posting_guidelines.yaml
-# Last updated: 2026-03-16
+# Last updated: 2026-03-29
 type: submission
-~title (regex): '\[(?:UTC(?:[+-](?:1[0-4]|[0-9])(?::(?:30|45))?)?|GMT|BST|WET|WEST|IST|CET|CEST|EET|EEST|MSK|TRT|WAT|CAT|EAT|SAST|GST|AST|IDT|IRST|IRDT|PKT|SLST|NPT|BDT|MMT|ICT|WIB|WITA|WIT|CST|HKT|SGT|JST|KST|AWST|ACST|ACDT|AEST|AEDT|NZST|NZDT|FJT|TOT|NST|NDT|ADT|EST|EDT|CDT|MST|MDT|PST|PDT|AKST|AKDT|HST|COT|PET|VET|ART|BRT|UYT)\]'
+~title (regex): '\[(?:(?:UTC|GMT)(?:[+-](?:1[0-4]|[0-9])(?::(?:30|45))?)?|BST|WET|WEST|IST|CET|CEST|EET|EEST|MSK|TRT|WAT|CAT|EAT|SAST|GST|AST|IDT|IRST|IRDT|PKT|SLST|NPT|BDT|MMT|ICT|WIB|WITA|WIT|CST|HKT|SGT|JST|KST|AWST|ACST|ACDT|AEST|AEDT|NZST|NZDT|FJT|TOT|NST|NDT|ADT|EST|EDT|CDT|MST|MDT|PST|PDT|AKST|AKDT|HST|COT|PET|VET|ART|BRT|UYT)\]'
 action: remove
 action_reason: "Posting guidelines (no timezone). Author: [/u/{{author}}]"
 comment: |
