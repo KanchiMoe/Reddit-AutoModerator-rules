@@ -1,9 +1,9 @@
 ---
 # Removes "post lined up" posts
 # src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/subreddit_specific/nevertellmetheodds/common_lined_up.yaml
-# Last updated: 2025-10-25
+# Last updated: 2026-05-02
 type: submission
-title+body: ["feed", "lined up", "line up", "posts", "beside eachother", "beside each other", "next to each other", "in a row", "back-to-back", "back to back", "the same post", "scrolling reddit", "browsing reddit", "scrolling through reddit", "browsing on reddit", "browsing through reddit", "looking at reddit", "my feed", "front page"]
+title+body: ["feed", "lined up", "line up", "posts", "beside eachother", "beside each other", "next to each other", "in a row", "back-to-back", "back to back", "the same post", "scrolling reddit", "browsing reddit", "scrolling through reddit", "browsing on reddit", "browsing through reddit", "looking at reddit", "my feed", "front page", "a post"]
 action: remove
 comment: |
   Sorry /u/{{author}}, but [your {{kind}}]({{permalink}}) was removed from /r/{{subreddit}} for the following reason(s):
