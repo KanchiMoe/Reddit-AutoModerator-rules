@@ -1,13 +1,13 @@
 ---
 # Someone said the odds!
 # src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/subreddit_specific/nevertellmetheodds/odds.yaml
-# Last updated: 2026-01-18
+# Last updated: 2026-05-18
 type: comment
-body (regex): ["(?i)the? odds (are|would be|of)", "(?i)(one|1) in (a|an|one|1)? million", "(?i)\\b\\d+\\s+in\\s+\\d+\\b"]
+body (regex): ["(?i)the? odds (are|would be|of)", "(?i)(one|1) in (a|an|one|1)? million", "(?i)\\b\\d+\\s+in\\s+\\d+\\b", "what are the odds"]
 action: remove
 action_reason: "Mentioned the odds. Author: [/u/{{author}}], match: [{{match}}]"
 message: |
-  You [mentioned]({{permalink}}) the odds!
+  You [mentioned]({{permalink}}) the odds! (or were asking about/for them)
 
   https://www.youtube.com/watch?v=qKR0oMqFcVI
 message_subject: "Never tell me the odds!"
