@@ -3,12 +3,24 @@
 # src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/subreddit_specific/nevertellmetheodds/odds.yaml
 # Last updated: 2026-05-18
 type: comment
-body (regex): ["(?i)the? odds (are|would be|of)", "(?i)(one|1) in (a|an|one|1)? million", "(?i)\\b\\d+\\s+in\\s+\\d+\\b", "what are the odds"]
+body (regex): [
+  # Phrases asking
+  '(?i)what are the (?:odds|chances)',
+  # the odds are...
+  '(?i)the? odds (are|would be|of)',
+  # the odds
+  '(?i)(one|1) in (a|an|one|1)? million", "(?i)\\b\\d+\\s+in\\s+\\d+\\b',
+  'odds are (?:about )?\d/\d'
+]
 action: remove
 action_reason: "Mentioned the odds. Author: [/u/{{author}}], match: [{{match}}]"
 message: |
   You [mentioned]({{permalink}}) the odds! (or were asking about/for them)
 
   https://www.youtube.com/watch?v=qKR0oMqFcVI
+
+  ---
+
+  ^(_Was this a mistake?_) [^(_Send us a message_)](https://reddit.com/message/compose?to=/r/{{subreddit}}&subject=Odds%20mentioned%20mistake&message=Insert%20additional%20information%20here.%0A%0A---%20Do%20not%20edit%20below%20this%20line%20---%0A%0ALink%3A%20{{permalink}}%0A) ^(_so we can fix it._)
 message_subject: "Never tell me the odds!"
 ---
