@@ -1,10 +1,10 @@
 ---
 # Removes comments that get edited as part of react.dev. The redaction replaces comments with useless information and spams links.
 # src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/general/redact.dev_cleanup.yaml
-# Last updated: 2026-02-25
+# Last updated: 2026-04-22
 type: comment
 is_edited: true
-body (includes-word): ["[Redact](https://redact.dev/home"]
+body (regex): ['\]\(https://redact\.dev']
 action: spam
 message_subject: "Courtesy message about the {{kind}} you edited in /r/{{subreddit}}"
 message: |
@@ -22,7 +22,7 @@ message: |
 
   *^(Don't reply to this message directly,)* [^(send the community moderators a message instead.)](https://www.reddit.com/message/compose/?to=/r/{{subreddit}})
 comment: |
-  The above comment was removed, as the user replaced it with random, useless gibberish after it had been posted.
+  The above comment, by /u/{{author}}, was removed, as they replaced it with random, useless gibberish after it had been posted. ^^^\(ver: ^^^2026-04-22)
 
   *****
 comment_locked: true
