@@ -1,16 +1,16 @@
 ---
 # Remove submissions websites that are obviously not news websites
 # src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/subreddit_specific/missingpersons/not_news_site.yaml
-# Last updated: 2026-02-13
+# Last updated: 2026-06-16
 type: submission
-domain: [walmart.com]
+domain: [walmart.com, minecraft.com]
 action: remove
 comment: |
   Hi /u/{{author}}, thanks for your {{kind}} to /r/{{subreddit}}. Unfortunately, it has been removed for the following reason(s):
 
   > ### Not a link to an official source
 
-  > The link you submitted, shown below, is a link to a website that is not a news or law enforcement website that can verify if a person is missing or not.
+  > The link you submitted, shown below, is not a link to a law enforcement, or news website.
 
   > Please delete this post, and resubmit using a link to a news or law enforcement website instead.
 

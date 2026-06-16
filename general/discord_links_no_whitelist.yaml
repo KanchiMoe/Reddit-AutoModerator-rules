@@ -1,0 +1,9 @@
+---
+# Remove discord links
+# src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/general/discord_links_no_whitelist.yaml
+# Last updated: 2026-05-27
+type: any
+title+domain+body (regex): ['discord\.(com|gg)']
+action: remove
+action_reason: "Discord link. Author: [/u/{{author}}], match: [{{match}}]"
+---

@@ -1,7 +1,7 @@
 ---
 # Someone said the odds!
 # src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/subreddit_specific/nevertellmetheodds/odds.yaml
-# Last updated: 2026-05-18
+# Last updated: 2026-05-22
 type: comment
 body (regex): [
   # Phrases asking
@@ -9,8 +9,10 @@ body (regex): [
   # the odds are...
   '(?i)the? odds (are|would be|of)',
   # the odds
-  '(?i)(one|1) in (a|an|one|1)? million", "(?i)\\b\\d+\\s+in\\s+\\d+\\b',
-  'odds are (?:about )?\d/\d'
+  '(?i)(one|1) in (a|an|one|1)? million',
+  '(?i)\\b\\d+\\s+in\\s+\\d+\\b',
+  '(?i)odds are (?:about )?\d/\d',
+  '\d\/\d'
 ]
 action: remove
 action_reason: "Mentioned the odds. Author: [/u/{{author}}], match: [{{match}}]"

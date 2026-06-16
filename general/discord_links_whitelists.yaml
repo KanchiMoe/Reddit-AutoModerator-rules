@@ -1,0 +1,26 @@
+---
+# Remove discord links (but allows links to whitelisted server(s))
+# src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/general/discord_links_whitelists.yaml
+# Last updated: 2026-05-27
+type: any
+title+domain+body (regex): ['discord\.(com|gg)']
+~title+domain+body: [
+    "discord.gg/vanity_url",
+    "discord.com/channels/server_id/",
+    "discord.com/invite/vanity_url",
+]
+action: remove
+action_reason: "Discord link to a non-approved server. Author: [/u/{{author}}], match: [{{match}}]"
+---
+#
+# Replace "vanity_url" with the actual vanity URK used for your server
+# If your server doesn't have a vanity URL, you can use the normal 'permalink'
+# Example: https://discord.gg/3bPYH5e6
+#
+# Replace "server_id" with the ID of your server. This will let you link to channels on that server.
+# Do not remove the "/"" at the end.
+# Examples:
+# ✅: "https://discord.com/channels/000/"
+# ❌: "https://discord.com/channels/000"
+#
+# https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID
