@@ -1,7 +1,7 @@
 ---
 # Anti-dox rules on email addresses, allowing police addresses
 # src: https://raw.githubusercontent.com/KanchiMoe/Reddit-AutoModerator-rules/master/subreddit_specific/missingpersons/antidox_email.yaml
-# Last updated: 2026-02-05
+# Last updated: 2026-07-10
 title+body (regex): ['(?!(abuse|help|info|no-?reply|phishing|service|spoof|support)\@)[\w!#$%&\x27*+\-./=?\^\x60{|}~]+\@([\w-]{1,64}\.)+([a-z]{2,16}|xn--[a-z0-9-]{1,60})']
 ~title+body: [
   "@south-wales.police.uk",
@@ -20,7 +20,8 @@ title+body (regex): ['(?!(abuse|help|info|no-?reply|phishing|service|spoof|suppo
   "missingp@njsp.org",
   "@bia.gov",
   "@nypd.org",
-  "tips@aurora.il.us"
+  "tips@aurora.il.us",
+  "missingpersons@mshp.dps.mo.gov"
 ]
 ~author: ["Example"]
 action: remove
